@@ -42,28 +42,13 @@ const About = () => {
         <div className="absolute -bottom-24 -right-24 w-80 h-80 bg-primary/30 rounded-full blur-3xl z-0"></div>
         <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="flex flex-col md:flex-row items-center gap-12">
-            {/* Logo with floating icons */}
+            {/* Logo */}
             <div className="relative group flex-shrink-0">
-              <div className="absolute -top-6 -left-6 animate-bounce">
-                <Award className="w-8 h-8 text-accent drop-shadow-lg" />
-              </div>
-              <div className="absolute -bottom-6 -right-6 animate-bounce delay-200">
-                <Zap className="w-8 h-8 text-primary drop-shadow-lg" />
-              </div>
-              <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 animate-bounce delay-500">
-                <Users className="w-8 h-8 text-secondary drop-shadow-lg" />
-              </div>
-              <div className="absolute top-1/2 -right-8 -translate-y-1/2 animate-bounce delay-300">
-                <Globe className="w-8 h-8 text-accent drop-shadow-lg" />
-              </div>
               <img
                 src={flickerLogo}
                 alt="Company Logo"
                 className="relative z-10 w-44 h-44 object-contain rounded-2xl border-4 border-accent/60 bg-background shadow-2xl transition-transform duration-300 group-hover:scale-110"
               />
-              {/* <span className="absolute -bottom-5 left-1/2 -translate-x-1/2 bg-gradient-to-r from-primary to-accent text-white px-6 py-2 rounded-full z-30 shadow-xl text-base font-bold tracking-wider border-2 border-white/30 backdrop-blur-md">
-                Since 1999
-              </span> */}
             </div>
             {/* Glassmorphism Card */}
             <div className="flex-1 bg-white/60 dark:bg-black/60 backdrop-blur-2xl rounded-3xl shadow-2xl p-12 border border-accent/30 relative overflow-hidden">
@@ -71,26 +56,26 @@ const About = () => {
               <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-accent to-primary rounded-t-3xl opacity-60"></div>
               <h2 className="text-5xl font-extrabold text-secondary mb-4 flex items-center gap-4">
                 <span className="bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent drop-shadow-lg">Company Details</span>
-                <span className="inline-block px-4 py-2 bg-primary/10 text-primary text-sm rounded-full font-bold tracking-wider shadow border border-primary/20">Flicker Sports Nexus</span>
+                <span className="inline-block px-4 py-2 bg-primary/10 text-primary text-sm rounded-full font-bold tracking-wider shadow border border-primary/20">Flicker Sports Industries</span>
               </h2>
               <p className="text-xl text-foreground mb-6 font-medium">
-                Flicker Sports Nexus is a <span className="font-semibold text-accent">leading manufacturer</span> and supplier of sports equipment in India, serving <span className="font-semibold text-primary">schools, colleges, clubs,</span> and <span className="font-semibold text-primary">institutions</span> nationwide. Our legacy is built on <span className="text-accent font-semibold">trust</span>, <span className="text-primary font-semibold">innovation</span>, and a passion for sports.
+                Flicker Sports Industries is a <span className="font-semibold text-accent">leading manufacturer</span> and supplier of sports equipment in India, serving <span className="font-semibold text-primary">schools, colleges, clubs,</span> and <span className="font-semibold text-primary">institutions</span> nationwide. Our legacy is built on <span className="text-accent font-semibold">trust</span>, <span className="text-primary font-semibold">innovation</span>, and a passion for sports.
               </p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-8 text-foreground/90 text-lg font-semibold">
                 <li className="flex items-center gap-3">
-                  <span className="w-4 h-4 rounded-full bg-accent shadow"></span>
+                  <Award className="w-6 h-6 text-accent drop-shadow" />
                   25+ Years of Excellence
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-4 h-4 rounded-full bg-primary shadow"></span>
+                  <Users className="w-6 h-6 text-primary drop-shadow" />
                   Trusted by 1000+ Clients
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-4 h-4 rounded-full bg-accent shadow"></span>
+                  <Globe className="w-6 h-6 text-accent drop-shadow" />
                   Pan-India Presence
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-4 h-4 rounded-full bg-primary shadow"></span>
+                  <Zap className="w-6 h-6 text-primary drop-shadow" />
                   Driven by Innovation & Passion
                 </li>
               </ul>
@@ -263,33 +248,35 @@ const About = () => {
 
      
 
-      
-
-      {/* Our Support */}
-      <section className="py-14 bg-gradient-to-br from-primary/10 to-accent/10">
+      {/* Support & Conclusion Section */}
+      <section className="py-16 bg-gradient-to-br from-primary/10 to-accent/10">
         <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-2xl mx-auto text-center rounded-2xl bg-white/80 dark:bg-black/40 shadow-lg p-8">
-            <Users className="w-10 h-10 mx-auto text-accent mb-4" />
-            <h2 className="text-2xl font-bold text-secondary mb-2">Our Support</h2>
-            <p className="text-foreground">
-              Our dedicated support team is always ready to assist you, from product selection to after-sales service. We value long-term relationships and customer satisfaction above all.
-            </p>
+          <div className="flex flex-col md:flex-row gap-10 w-full">
+            {/* Our Support */}
+            <div className="flex-1 rounded-2xl bg-white/80 dark:bg-black/40 shadow-lg p-10 flex flex-col items-center justify-center">
+              <Users className="w-12 h-12 text-accent mb-4" />
+              <h2 className="text-2xl md:text-3xl font-extrabold text-secondary mb-3 text-center">Our Support</h2>
+              <p className="text-foreground text-center">
+                Our dedicated support team is always ready to assist you, from product selection to after-sales service.<br />
+                We value long-term relationships and customer satisfaction above all.
+              </p>
+            </div>
+            {/* Conclusion */}
+            <div className="flex-1 rounded-2xl bg-white/80 dark:bg-black/40 shadow-lg p-10 flex flex-col items-center justify-center">
+              <Award className="w-12 h-12 text-accent mb-4" />
+              <h2 className="text-2xl md:text-3xl font-extrabold text-secondary mb-3 text-center">
+                Ready to Elevate Your Game?
+              </h2>
+              <p className="text-lg text-foreground mb-4 text-center">
+                Join hands with <span className="font-semibold text-primary">Flicker Sports Industries</span> and experience the difference in <span className="text-accent font-semibold">quality</span>, <span className="text-primary font-semibold">service</span>, and <span className="text-accent font-semibold">commitment</span>.
+              </p>
+              <p className="text-foreground text-center">
+                Together, let’s build a stronger sporting future for India.
+              </p>
+            </div>
           </div>
         </div>
       </section>
-
-      {/* Conclusion */}
-      <section className="py-12 bg-background">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-2xl font-bold text-secondary mb-2">Conclusion</h2>
-            <p className="text-foreground">
-              Join hands with Flicker Sports Nexus and experience the difference in quality, service, and commitment. Together, let’s build a stronger sporting future for India.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <Footer />
     </div>
   );
