@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import flickerLogo1 from '../assets/icon.png';
 import { Zap, MapPin, Phone, Mail, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => {
@@ -10,9 +11,13 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-br from-accent to-primary rounded-lg flex items-center justify-center">
-                <Zap className="w-5 h-5 text-white" />
-              </div>
+               <div className="relative group flex-shrink-0">
+              <img
+                src={flickerLogo1}
+                alt="Company Logo"
+                className="relative z-10 w-12 h-12 md:w-20 md:h-20 object-contain rounded-2xl border-4 border-accent/60 bg-background shadow-2xl transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
               <span className="text-xl font-bold">Flicker Sports</span>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
@@ -122,30 +127,12 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Newsletter Signup */}
-        <div className="border-t border-gray-700 mt-8 pt-8">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="mb-4 md:mb-0">
-              <h4 className="text-lg font-semibold mb-2">Stay Updated</h4>
-              <p className="text-gray-300 text-sm">Get the latest updates on our products and industry news.</p>
-            </div>
-            <div className="flex space-x-2">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="px-4 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:ring-2 focus:ring-accent focus:border-transparent"
-              />
-              <button className="px-6 py-2 bg-accent text-white rounded-lg hover:bg-primary transition-colors">
-                Subscribe
-              </button>
-            </div>
-          </div>
-        </div>
+
 
         {/* Copyright */}
         <div className="border-t border-gray-700 mt-8 pt-6 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 Flicker Sports Industries. All rights reserved. | 
+            © 2025 Flicker Sports Industries. All rights reserved. | 
             <span className="text-accent"> Powering Performance Across India</span>
           </p>
         </div>

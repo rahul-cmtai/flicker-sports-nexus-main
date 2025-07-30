@@ -114,17 +114,18 @@ const About = () => {
       </section>
 
       {/* Company Stats */}
-      <section className="py-20 bg-card">
-        <div className="container mx-auto px-4 lg:px-8">
+      <section className="py-20 relative overflow-hidden bg-[#181e29] text-white">
+        {/* Artistic Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-tr from-blue-700/30 via-primary/20 to-accent/30 pointer-events-none"></div>
+        <div className="container mx-auto px-4 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-secondary mb-4">
+            <h2 className="text-4xl font-bold text-white mb-4">
               Trusted Across India
             </h2>
-            <p className="text-xl text-foreground">
+            <p className="text-xl text-gray-200">
               Our numbers speak for our commitment to excellence
             </p>
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { icon: Award, number: '25+', label: 'Years Experience' },
@@ -133,11 +134,11 @@ const About = () => {
               { icon: Zap, number: '10000+', label: 'Products Delivered' }
             ].map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
                   <stat.icon className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-4xl font-bold text-primary mb-2">{stat.number}</div>
-                <div className="text-foreground font-medium">{stat.label}</div>
+                <div className="text-4xl font-bold text-blue-400 mb-2">{stat.number}</div>
+                <div className="text-gray-100 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
