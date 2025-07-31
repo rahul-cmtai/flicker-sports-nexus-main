@@ -1,15 +1,29 @@
 import React from 'react';
+import airforceAcademyBangalore from '../assets/clients/airforce-academy-bangalore.png';
+import airforceAcademyHyderabad from '../assets/clients/airforce-academy-hyderabad.jpg';
+import centuryRealEstate from '../assets/clients/century-real-estate-holding-pvt-ltd.png';
+import crpfDeptJammu from '../assets/clients/crpf-dept-jammu.jpg';
+import garwareTechnicalFibres from '../assets/clients/garware-technical-fibres-ltd.jpg';
+import greatSportsTech from '../assets/clients/great-sports-tech-limited.jpg';
+import mechezoSports from '../assets/clients/mechezo-sports-pvt-ltd.jpg';
+import sainikSchoolSambalpur from '../assets/clients/sainik-school-sambalpur-logo.jpg';
+import sreenidhiDeccanFootball from '../assets/clients/sreenidhi-deccan-football-club-pvt-ltd-hyderabad.png';
+import tataJamshedpur from '../assets/clients/tata-jamshedpur.jpg';
+import woxsenUniversity from '../assets/clients/woxsen-university-hyderabad.jpg';
 
 const ClientsSection = () => {
   const clients = [
-    { name: "Defense Academy Delhi", logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" },
-    { name: "Central Sports Authority", logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" },
-    { name: "National Sports University", logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" },
-    { name: "State Olympic Committee", logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" },
-    { name: "Premier Sports Club", logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" },
-    { name: "Tech Sports Complex", logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" },
-    { name: "Elite Training Center", logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" },
-    { name: "International Sports Hub", logo: "https://images.unsplash.com/photo-1599305445671-ac291c95aaa9?w=200&h=100&fit=crop" }
+    { name: "Air Force Academy Bangalore", logo: airforceAcademyBangalore },
+    { name: "Air Force Academy Hyderabad", logo: airforceAcademyHyderabad },
+    { name: "Century Real Estate Holding Pvt Ltd", logo: centuryRealEstate },
+    { name: "CRPF Department Jammu", logo: crpfDeptJammu },
+    { name: "Garware Technical Fibres Ltd", logo: garwareTechnicalFibres },
+    { name: "Great Sports Tech Limited", logo: greatSportsTech },
+    { name: "Mechezo Sports Pvt Ltd", logo: mechezoSports },
+    { name: "Sainik School Sambalpur", logo: sainikSchoolSambalpur },
+    { name: "Sreenidhi Deccan Football Club Pvt Ltd Hyderabad", logo: sreenidhiDeccanFootball },
+    { name: "Tata Jamshedpur", logo: tataJamshedpur },
+    { name: "Woxsen University Hyderabad", logo: woxsenUniversity }
   ];
 
   // Duplicate the clients array for seamless infinite scroll

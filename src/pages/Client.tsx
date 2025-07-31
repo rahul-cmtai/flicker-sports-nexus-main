@@ -1,24 +1,31 @@
 import React from "react";
 import NavBar from "../components/Navbar";
 import Footer from "../components/Footer";
+import airforceAcademyBangalore from '../assets/clients/airforce-academy-bangalore.png';
+import airforceAcademyHyderabad from '../assets/clients/airforce-academy-hyderabad.jpg';
+import centuryRealEstate from '../assets/clients/century-real-estate-holding-pvt-ltd.png';
+import crpfDeptJammu from '../assets/clients/crpf-dept-jammu.jpg';
+import garwareTechnicalFibres from '../assets/clients/garware-technical-fibres-ltd.jpg';
+import greatSportsTech from '../assets/clients/great-sports-tech-limited.jpg';
+import mechezoSports from '../assets/clients/mechezo-sports-pvt-ltd.jpg';
+import sainikSchoolSambalpur from '../assets/clients/sainik-school-sambalpur-logo.jpg';
+import sreenidhiDeccanFootball from '../assets/clients/sreenidhi-deccan-football-club-pvt-ltd-hyderabad.png';
+import tataJamshedpur from '../assets/clients/tata-jamshedpur.jpg';
+import woxsenUniversity from '../assets/clients/woxsen-university-hyderabad.jpg';
 
-// Dummy data for clients
+// Real client data with actual images (all available files)
 const clients = [
-  { name: "Garware", img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=100&h=80&q=80" },
-  { name: "Century real", img: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=100&h=80&q=80" },
-  { name: "NACIN,", img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=100&h=80&q=80" },
-  { name: "Sainik", img: "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=facearea&w=100&h=80&q=80" },
-  { name: "Woxsen", img: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=facearea&w=100&h=80&q=80" },
-  { name: "Global mineral", img: "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=facearea&w=100&h=80&q=80" },
-  { name: "Sreenidhi", img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=100&h=80&q=80" },
-  { name: "CRPF dept.", img: "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=facearea&w=100&h=80&q=80" },
-  { name: "Airforce", img: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=facearea&w=100&h=80&q=80" },
-  { name: "Airforce", img: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=100&h=80&q=80" },
-  { name: "Rscape pvt ltd", img: "https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=facearea&w=100&h=80&q=80" },
-  { name: "TATA", img: "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=facearea&w=100&h=80&q=80" },
-  { name: "Sainik School", img: "https://images.unsplash.com/photo-1465101178521-c1a9136a3b99?auto=format&fit=facearea&w=100&h=80&q=80" },
-  { name: "MICHEZO", img: "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=100&h=80&q=80" },
-  { name: "Great SportsTech", img: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=facearea&w=100&h=80&q=80" },
+  { name: "Air Force Academy Bangalore", img: airforceAcademyBangalore },
+  { name: "Air Force Academy Hyderabad", img: airforceAcademyHyderabad },
+  { name: "Century Real Estate Holding Pvt Ltd", img: centuryRealEstate },
+  { name: "CRPF Department Jammu", img: crpfDeptJammu },
+  { name: "Garware Technical Fibres Ltd", img: garwareTechnicalFibres },
+  { name: "Great Sports Tech Limited", img: greatSportsTech },
+  { name: "Mechezo Sports Pvt Ltd", img: mechezoSports },
+  { name: "Sainik School Sambalpur", img: sainikSchoolSambalpur },
+  { name: "Sreenidhi Deccan Football Club Pvt Ltd Hyderabad", img: sreenidhiDeccanFootball },
+  { name: "Tata Jamshedpur", img: tataJamshedpur },
+  { name: "Woxsen University Hyderabad", img: woxsenUniversity }
 ];
 
 const Client = () => {
