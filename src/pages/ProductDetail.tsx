@@ -29,61 +29,61 @@ const ProductDetail = () => {
     const productName = name?.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()) || 'Cricket Equipment';
     
     const productDatabase: { [key: string]: Product } = {
-      'cricket': {
-        name: 'Cricket Equipment',
-        price: "₹15,000 - ₹75,000",
-        rating: 4.9,
-        reviews: 156,
+      'basketball': {
+        name: 'Basketball Equipment',
+        price: "₹15,000 - ₹50,000",
+        rating: 4.6,
+        reviews: 67,
         images: [
           "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600&h=600&fit=crop",
           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
           "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop",
           "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600&h=600&fit=crop"
         ],
-        description: "Professional cricket equipment including nets, batting cages, bowling machines, and training gear. Designed for schools, clubs, and professional training facilities across India.",
+        description: "Professional basketball equipment including hoops, backboards, and court systems. Built for durability and performance.",
         features: [
-          "Professional-grade cricket nets",
-          "Automated bowling machines",
-          "Batting cages with safety features",
+          "Height adjustable hoops",
+          "Tempered glass backboards",
+          "Professional court systems",
           "Weather-resistant materials",
-          "Easy installation and maintenance",
+          "Easy installation",
           "5-year warranty included"
         ],
         specifications: {
-          "Material": "Galvanized Steel & Nylon Nets",
-          "Net Height": "3.5m - 4.5m adjustable",
-          "Length": "20m - 30m customizable",
-          "Bowling Machine": "Variable speed control",
-          "Safety Features": "Impact-absorbing padding",
+          "Material": "Galvanized Steel",
+          "Height": "Adjustable 2.6m - 3.05m",
+          "Backboard": "Tempered glass/Acrylic",
+          "Rim": "Spring-loaded breakaway",
+          "Installation": "Professional support",
           "Warranty": "5 years"
         }
       },
-      'football': {
-        name: 'Football Equipment',
-        price: "₹8,000 - ₹35,000",
-        rating: 4.7,
-        reviews: 89,
+      'pickleball': {
+        name: 'Pickleball Equipment',
+        price: "₹8,000 - ₹25,000",
+        rating: 4.5,
+        reviews: 34,
         images: [
-          "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=600&fit=crop"
+          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
         ],
-        description: "Complete football equipment including goals, nets, training equipment, and field marking systems. Perfect for schools, clubs, and professional football facilities.",
+        description: "Professional pickleball courts, nets, and equipment for indoor and outdoor facilities. Perfect for schools, clubs, and recreational centers.",
         features: [
-          "Professional football goals",
-          "High-quality nylon nets",
-          "Training equipment sets",
-          "Field marking systems",
-          "Portable and fixed options",
+          "Professional pickleball courts",
+          "High-quality nets and posts",
+          "Indoor and outdoor options",
+          "Anti-slip flooring",
+          "LED lighting systems",
           "3-year warranty included"
         ],
         specifications: {
+          "Court Size": "13.4m x 6.1m standard",
+          "Net Height": "0.91m at center",
           "Material": "Galvanized Steel & Nylon",
-          "Goal Size": "7.32m x 2.44m standard",
-          "Net Material": "Weather-resistant nylon",
-          "Portable": "Yes, with wheels",
-          "Installation": "Professional support",
+          "Flooring": "Anti-slip synthetic",
+          "Lighting": "LED systems available",
           "Warranty": "3 years"
         }
       },
@@ -116,60 +116,176 @@ const ProductDetail = () => {
           "Warranty": "5 years"
         }
       },
-      'kabaddi': {
-        name: 'Kabaddi Equipment',
-        price: "₹5,000 - ₹25,000",
-        rating: 4.6,
-        reviews: 34,
+      'lawn-tennis': {
+        name: 'Lawn Tennis Equipment',
+        price: "₹20,000 - ₹80,000",
+        rating: 4.8,
+        reviews: 89,
         images: [
           "https://images.unsplash.com/photo-1622546016830-a02e0a531fbb?w=600&h=600&fit=crop",
           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
           "https://images.unsplash.com/photo-1622546016830-a02e0a531fbb?w=600&h=600&fit=crop",
           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
         ],
-        description: "Professional kabaddi courts and equipment designed for traditional Indian sport. Includes court marking, safety equipment, and training facilities.",
+        description: "Professional tennis courts, nets, and equipment for both indoor and outdoor facilities. Built to international standards.",
         features: [
-          "Professional kabaddi courts",
-          "Anti-slip flooring",
-          "Safety padding systems",
-          "Court marking systems",
-          "Training equipment",
-          "3-year warranty included"
+          "Professional tennis courts",
+          "High-quality nets and posts",
+          "Indoor and outdoor options",
+          "Court lighting systems",
+          "Professional installation",
+          "5-year warranty included"
         ],
         specifications: {
-          "Court Size": "13m x 10m standard",
-          "Material": "Anti-slip synthetic",
-          "Safety": "Impact-absorbing padding",
-          "Marking": "Professional court lines",
-          "Installation": "Professional support",
-          "Warranty": "3 years"
+          "Court Size": "23.77m x 10.97m standard",
+          "Net Height": "0.914m at center",
+          "Material": "Synthetic/Clay options",
+          "Lighting": "Professional LED systems",
+          "Installation": "Professional team",
+          "Warranty": "5 years"
         }
       },
-      'hockey': {
-        name: 'Hockey Equipment',
-        price: "₹10,000 - ₹40,000",
-        rating: 4.7,
-        reviews: 45,
+      'foosball': {
+        name: 'Foosball Tables',
+        price: "₹8,000 - ₹35,000",
+        rating: 4.4,
+        reviews: 23,
+        images: [
+          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+        ],
+        description: "Professional foosball tables for entertainment and recreation. Perfect for clubs, offices, and home use.",
+        features: [
+          "Professional-grade tables",
+          "Smooth player movement",
+          "Sturdy construction",
+          "Easy assembly",
+          "Multiple player options",
+          "2-year warranty included"
+        ],
+        specifications: {
+          "Table Size": "Standard tournament size",
+          "Material": "Solid wood/MDF",
+          "Players": "Professional grade",
+          "Assembly": "Easy setup",
+          "Portable": "Yes",
+          "Warranty": "2 years"
+        }
+      },
+      'volleyball': {
+        name: 'Volleyball Equipment',
+        price: "₹8,000 - ₹30,000",
+        rating: 4.5,
+        reviews: 43,
         images: [
           "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=600&h=600&fit=crop",
           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
           "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=600&h=600&fit=crop",
           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
         ],
-        description: "Professional hockey equipment including goals, nets, training equipment, and field marking systems for India's national sport.",
+        description: "Professional volleyball equipment including nets, posts, and court systems. Perfect for schools, clubs, and beach volleyball facilities.",
         features: [
-          "Professional hockey goals",
-          "High-quality nets",
-          "Training equipment",
-          "Field marking systems",
+          "Professional volleyball nets",
+          "Adjustable height posts",
+          "Court marking systems",
+          "Beach volleyball options",
           "Safety equipment",
           "3-year warranty included"
         ],
         specifications: {
-          "Goal Size": "3.66m x 2.14m standard",
+          "Net Height": "2.43m (men) / 2.24m (women)",
           "Material": "Galvanized Steel & Nylon",
-          "Net Material": "Weather-resistant nylon",
+          "Court Size": "18m x 9m standard",
+          "Portable": "Yes, with wheels",
           "Safety": "Impact-absorbing padding",
+          "Warranty": "3 years"
+        }
+      },
+      'handball': {
+        name: 'Handball Equipment',
+        price: "₹6,000 - ₹25,000",
+        rating: 4.3,
+        reviews: 19,
+        images: [
+          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+        ],
+        description: "Professional handball equipment including goals, courts, and training equipment for indoor facilities.",
+        features: [
+          "Professional handball goals",
+          "Court marking systems",
+          "Training equipment",
+          "Safety equipment",
+          "Indoor facilities",
+          "3-year warranty included"
+        ],
+        specifications: {
+          "Goal Size": "3m x 2m standard",
+          "Material": "Galvanized Steel",
+          "Court Size": "40m x 20m standard",
+          "Safety": "Impact-absorbing padding",
+          "Installation": "Professional support",
+          "Warranty": "3 years"
+        }
+      },
+      'boxing-ring': {
+        name: 'Boxing Ring Equipment',
+        price: "₹50,000 - ₹2,00,000",
+        rating: 4.6,
+        reviews: 38,
+        images: [
+          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+        ],
+        description: "Professional boxing ring equipment for training facilities and clubs. Complete setup with safety features and professional standards.",
+        features: [
+          "Professional boxing ring",
+          "Safety padding systems",
+          "Ring ropes and posts",
+          "Flooring system",
+          "Professional installation",
+          "5-year warranty included"
+        ],
+        specifications: {
+          "Ring Size": "6m x 6m standard",
+          "Material": "High-grade steel",
+          "Padding": "Impact-absorbing foam",
+          "Ropes": "Professional grade",
+          "Installation": "Professional team",
+          "Warranty": "5 years"
+        }
+      },
+      'football': {
+        name: 'Football Equipment',
+        price: "₹8,000 - ₹35,000",
+        rating: 4.7,
+        reviews: 89,
+        images: [
+          "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=600&fit=crop"
+        ],
+        description: "Complete football equipment including goals, nets, training equipment, and field marking systems. Perfect for schools, clubs, and professional football facilities.",
+        features: [
+          "Professional football goals",
+          "High-quality nylon nets",
+          "Training equipment sets",
+          "Field marking systems",
+          "Portable and fixed options",
+          "3-year warranty included"
+        ],
+        specifications: {
+          "Material": "Galvanized Steel & Nylon",
+          "Goal Size": "7.32m x 2.44m standard",
+          "Net Material": "Weather-resistant nylon",
+          "Portable": "Yes, with wheels",
           "Installation": "Professional support",
           "Warranty": "3 years"
         }
@@ -203,8 +319,124 @@ const ProductDetail = () => {
           "Warranty": "2 years"
         }
       },
-      'outdoor-gym': {
-        name: 'Outdoor Gym Equipment',
+      'pool-and-snooker-tables': {
+        name: 'Pool and Snooker Tables',
+        price: "₹25,000 - ₹1,00,000",
+        rating: 4.5,
+        reviews: 34,
+        images: [
+          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+        ],
+        description: "Professional pool and snooker tables for clubs, recreation centers, and home use. High-quality construction with premium materials.",
+        features: [
+          "Professional-grade tables",
+          "High-quality felt",
+          "Sturdy construction",
+          "Leveling system",
+          "Accessories included",
+          "3-year warranty included"
+        ],
+        specifications: {
+          "Table Size": "7ft, 8ft, 9ft options",
+          "Material": "Solid wood frame",
+          "Felt": "Professional grade",
+          "Leveling": "Adjustable feet",
+          "Accessories": "Cues, balls, rack",
+          "Warranty": "3 years"
+        }
+      },
+      'gymnastics': {
+        name: 'Gymnastics Equipment',
+        price: "₹30,000 - ₹1,50,000",
+        rating: 4.7,
+        reviews: 45,
+        images: [
+          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+        ],
+        description: "Complete gymnastics equipment for training facilities, schools, and clubs. Professional-grade equipment for all skill levels.",
+        features: [
+          "Complete gymnastics setup",
+          "Safety-certified equipment",
+          "Professional installation",
+          "Training support",
+          "Maintenance service",
+          "5-year warranty included"
+        ],
+        specifications: {
+          "Equipment": "Complete gymnastics set",
+          "Material": "High-grade steel",
+          "Safety": "ISO certified",
+          "Installation": "Professional team",
+          "Training": "Setup guidance included",
+          "Warranty": "5 years"
+        }
+      },
+      'hockey': {
+        name: 'Hockey Equipment',
+        price: "₹10,000 - ₹40,000",
+        rating: 4.7,
+        reviews: 45,
+        images: [
+          "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+        ],
+        description: "Professional hockey equipment including goals, nets, training equipment, and field marking systems for India's national sport.",
+        features: [
+          "Professional hockey goals",
+          "High-quality nets",
+          "Training equipment",
+          "Field marking systems",
+          "Safety equipment",
+          "3-year warranty included"
+        ],
+        specifications: {
+          "Goal Size": "3.66m x 2.14m standard",
+          "Material": "Galvanized Steel & Nylon",
+          "Net Material": "Weather-resistant nylon",
+          "Safety": "Impact-absorbing padding",
+          "Installation": "Professional support",
+          "Warranty": "3 years"
+        }
+      },
+      'dugout': {
+        name: 'Dugout Equipment',
+        price: "₹15,000 - ₹50,000",
+        rating: 4.4,
+        reviews: 28,
+        images: [
+          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+        ],
+        description: "Professional dugout equipment for sports facilities and stadiums. Complete setup with seating, storage, and safety features.",
+        features: [
+          "Professional dugout design",
+          "Comfortable seating",
+          "Storage compartments",
+          "Safety features",
+          "Weather-resistant materials",
+          "3-year warranty included"
+        ],
+        specifications: {
+          "Capacity": "15-25 players",
+          "Material": "Weather-resistant steel",
+          "Seating": "Comfortable benches",
+          "Storage": "Equipment compartments",
+          "Installation": "Professional team",
+          "Warranty": "3 years"
+        }
+      },
+      'outdoor-gym-and-children-play-equipment': {
+        name: 'Outdoor Gym and Children Play Equipment',
         price: "₹50,000 - ₹2,00,000",
         rating: 4.8,
         reviews: 123,
@@ -214,401 +446,53 @@ const ProductDetail = () => {
           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
         ],
-        description: "Complete outdoor gym setups with professional fitness equipment. Perfect for parks, schools, and community centers across India.",
+        description: "Complete outdoor gym setups with professional fitness equipment and children's play equipment. Perfect for parks, schools, and community centers across India.",
         features: [
           "Complete gym equipment sets",
+          "Children's play equipment",
           "Weather-resistant materials",
           "Safety-certified equipment",
           "Professional installation",
-          "Maintenance support",
           "5-year warranty included"
         ],
         specifications: {
           "Equipment": "15+ different machines",
+          "Play Equipment": "Swings, slides, climbing",
           "Material": "Weather-resistant steel",
           "Safety": "ISO certified",
           "Installation": "Professional team",
-          "Maintenance": "Annual service included",
           "Warranty": "5 years"
         }
       },
-      'athletics': {
-        name: 'Athletics Equipment',
-        price: "₹25,000 - ₹1,00,000",
-        rating: 4.7,
-        reviews: 56,
-        images: [
-          "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
-        ],
-        description: "Professional athletics equipment including track and field equipment, jumping pits, throwing equipment, and timing systems.",
-        features: [
-          "Professional track equipment",
-          "Jumping pits and runways",
-          "Throwing equipment",
-          "Timing systems",
-          "Safety equipment",
-          "5-year warranty included"
-        ],
-        specifications: {
-          "Track": "400m standard track",
-          "Material": "Synthetic rubber",
-          "Equipment": "Complete athletics set",
-          "Timing": "Electronic systems",
-          "Safety": "Professional standards",
-          "Warranty": "5 years"
-        }
-      },
-      'basketball': {
-        name: 'Basketball Equipment',
-        price: "₹15,000 - ₹50,000",
+      'sports-flooring': {
+        name: 'Sports Flooring',
+        price: "₹200 - ₹800 per sq ft",
         rating: 4.6,
-        reviews: 67,
-        images: [
-          "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600&h=600&fit=crop"
-        ],
-        description: "Professional basketball equipment including hoops, backboards, and court systems. Built for durability and performance.",
-        features: [
-          "Height adjustable hoops",
-          "Tempered glass backboards",
-          "Professional court systems",
-          "Weather-resistant materials",
-          "Easy installation",
-          "5-year warranty included"
-        ],
-        specifications: {
-          "Material": "Galvanized Steel",
-          "Height": "Adjustable 2.6m - 3.05m",
-          "Backboard": "Tempered glass/Acrylic",
-          "Rim": "Spring-loaded breakaway",
-          "Installation": "Professional support",
-          "Warranty": "5 years"
-        }
-      },
-      'volleyball': {
-        name: 'Volleyball Equipment',
-        price: "₹8,000 - ₹30,000",
-        rating: 4.5,
-        reviews: 43,
-        images: [
-          "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
-        ],
-        description: "Professional volleyball equipment including nets, posts, and court systems. Perfect for schools, clubs, and beach volleyball facilities.",
-        features: [
-          "Professional volleyball nets",
-          "Adjustable height posts",
-          "Court marking systems",
-          "Beach volleyball options",
-          "Safety equipment",
-          "3-year warranty included"
-        ],
-        specifications: {
-          "Net Height": "2.43m (men) / 2.24m (women)",
-          "Material": "Galvanized Steel & Nylon",
-          "Court Size": "18m x 9m standard",
-          "Portable": "Yes, with wheels",
-          "Safety": "Impact-absorbing padding",
-          "Warranty": "3 years"
-        }
-      },
-      'lawn-tennis': {
-        name: 'Lawn Tennis Equipment',
-        price: "₹20,000 - ₹80,000",
-        rating: 4.8,
         reviews: 89,
         images: [
-          "https://images.unsplash.com/photo-1622546016830-a02e0a531fbb?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1622546016830-a02e0a531fbb?w=600&h=600&fit=crop",
+          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
         ],
-        description: "Professional tennis courts, nets, and equipment for both indoor and outdoor facilities. Built to international standards.",
+        description: "Professional sports flooring solutions for indoor and outdoor facilities. Anti-slip, durable, and designed for various sports.",
         features: [
-          "Professional tennis courts",
-          "High-quality nets and posts",
-          "Indoor and outdoor options",
-          "Court lighting systems",
-          "Professional installation",
+          "Anti-slip surface",
+          "Weather-resistant materials",
+          "Easy installation",
+          "Low maintenance",
+          "Multiple color options",
           "5-year warranty included"
         ],
         specifications: {
-          "Court Size": "23.77m x 10.97m standard",
-          "Net Height": "0.914m at center",
-          "Material": "Synthetic/Clay options",
-          "Lighting": "Professional LED systems",
+          "Material": "Synthetic rubber/PVC",
+          "Thickness": "8mm - 15mm",
+          "Surface": "Anti-slip texture",
           "Installation": "Professional team",
+          "Maintenance": "Easy cleaning",
           "Warranty": "5 years"
         }
-      },
-             'kho-kho': {
-         name: 'Kho-Kho Equipment',
-         price: "₹4,000 - ₹20,000",
-         rating: 4.4,
-         reviews: 28,
-         images: [
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
-         ],
-         description: "Professional kho-kho courts and equipment for traditional Indian sport. Includes court marking, poles, and safety equipment.",
-         features: [
-           "Professional kho-kho courts",
-           "Anti-slip flooring",
-           "Court marking systems",
-           "Safety equipment",
-           "Training facilities",
-           "3-year warranty included"
-         ],
-         specifications: {
-           "Court Size": "29m x 16m standard",
-           "Material": "Anti-slip synthetic",
-           "Poles": "Galvanized steel",
-           "Marking": "Professional court lines",
-           "Safety": "Impact-absorbing padding",
-           "Warranty": "3 years"
-         }
-       },
-       'flooring': {
-         name: 'Sports Flooring',
-         price: "₹200 - ₹800 per sq ft",
-         rating: 4.6,
-         reviews: 89,
-         images: [
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
-         ],
-         description: "Professional sports flooring solutions for indoor and outdoor facilities. Anti-slip, durable, and designed for various sports.",
-         features: [
-           "Anti-slip surface",
-           "Weather-resistant materials",
-           "Easy installation",
-           "Low maintenance",
-           "Multiple color options",
-           "5-year warranty included"
-         ],
-         specifications: {
-           "Material": "Synthetic rubber/PVC",
-           "Thickness": "8mm - 15mm",
-           "Surface": "Anti-slip texture",
-           "Installation": "Professional team",
-           "Maintenance": "Easy cleaning",
-           "Warranty": "5 years"
-         }
-       },
-       'pool-tables': {
-         name: 'Pool Tables',
-         price: "₹25,000 - ₹1,00,000",
-         rating: 4.5,
-         reviews: 34,
-         images: [
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
-         ],
-         description: "Professional pool tables for clubs, recreation centers, and home use. High-quality construction with premium materials.",
-         features: [
-           "Professional-grade tables",
-           "High-quality felt",
-           "Sturdy construction",
-           "Leveling system",
-           "Accessories included",
-           "3-year warranty included"
-         ],
-         specifications: {
-           "Table Size": "7ft, 8ft, 9ft options",
-           "Material": "Solid wood frame",
-           "Felt": "Professional grade",
-           "Leveling": "Adjustable feet",
-           "Accessories": "Cues, balls, rack",
-           "Warranty": "3 years"
-         }
-       },
-       'foosball': {
-         name: 'Foosball Tables',
-         price: "₹8,000 - ₹35,000",
-         rating: 4.4,
-         reviews: 23,
-         images: [
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
-         ],
-         description: "Professional foosball tables for entertainment and recreation. Perfect for clubs, offices, and home use.",
-         features: [
-           "Professional-grade tables",
-           "Smooth player movement",
-           "Sturdy construction",
-           "Easy assembly",
-           "Multiple player options",
-           "2-year warranty included"
-         ],
-         specifications: {
-           "Table Size": "Standard tournament size",
-           "Material": "Solid wood/MDF",
-           "Players": "Professional grade",
-           "Assembly": "Easy setup",
-           "Portable": "Yes",
-           "Warranty": "2 years"
-         }
-       },
-       'handball': {
-         name: 'Handball Equipment',
-         price: "₹6,000 - ₹25,000",
-         rating: 4.3,
-         reviews: 19,
-         images: [
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
-         ],
-         description: "Professional handball equipment including goals, courts, and training equipment for indoor facilities.",
-         features: [
-           "Professional handball goals",
-           "Court marking systems",
-           "Training equipment",
-           "Safety equipment",
-           "Indoor facilities",
-           "3-year warranty included"
-         ],
-         specifications: {
-           "Goal Size": "3m x 2m standard",
-           "Material": "Galvanized Steel",
-           "Court Size": "40m x 20m standard",
-           "Safety": "Impact-absorbing padding",
-           "Installation": "Professional support",
-           "Warranty": "3 years"
-         }
-       },
-       'gymnastics': {
-         name: 'Gymnastics Equipment',
-         price: "₹30,000 - ₹1,50,000",
-         rating: 4.7,
-         reviews: 45,
-         images: [
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
-         ],
-         description: "Complete gymnastics equipment for training facilities, schools, and clubs. Professional-grade equipment for all skill levels.",
-         features: [
-           "Complete gymnastics setup",
-           "Safety-certified equipment",
-           "Professional installation",
-           "Training support",
-           "Maintenance service",
-           "5-year warranty included"
-         ],
-         specifications: {
-           "Equipment": "Complete gymnastics set",
-           "Material": "High-grade steel",
-           "Safety": "ISO certified",
-           "Installation": "Professional team",
-           "Training": "Setup guidance included",
-           "Warranty": "5 years"
-         }
-       },
-       'boxing-ring': {
-         name: 'Boxing Ring Equipment',
-         price: "₹50,000 - ₹2,00,000",
-         rating: 4.6,
-         reviews: 38,
-         images: [
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
-         ],
-         description: "Professional boxing ring equipment for training facilities and clubs. Complete setup with safety features and professional standards.",
-         features: [
-           "Professional boxing ring",
-           "Safety padding systems",
-           "Ring ropes and posts",
-           "Flooring system",
-           "Professional installation",
-           "5-year warranty included"
-         ],
-         specifications: {
-           "Ring Size": "6m x 6m standard",
-           "Material": "High-grade steel",
-           "Padding": "Impact-absorbing foam",
-           "Ropes": "Professional grade",
-           "Installation": "Professional team",
-           "Warranty": "5 years"
-         }
-       },
-       'swimming': {
-         name: 'Swimming Equipment',
-         price: "₹1,00,000 - ₹5,00,000",
-         rating: 4.8,
-         reviews: 67,
-         images: [
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
-         ],
-         description: "Complete swimming pool equipment and accessories for sports facilities, schools, and clubs. Professional-grade equipment.",
-         features: [
-           "Swimming pool equipment",
-           "Filtration systems",
-           "Safety equipment",
-           "Training accessories",
-           "Professional installation",
-           "5-year warranty included"
-         ],
-         specifications: {
-           "Equipment": "Complete pool setup",
-           "Filtration": "Professional systems",
-           "Safety": "ISO certified",
-           "Installation": "Professional team",
-           "Maintenance": "Annual service",
-           "Warranty": "5 years"
-         }
-       },
-       'other': {
-         name: 'Other Sports Equipment',
-         price: "₹5,000 - ₹50,000",
-         rating: 4.5,
-         reviews: 56,
-         images: [
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-           "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
-         ],
-         description: "Custom sports equipment and specialized gear for various sports and activities. Contact us for custom requirements.",
-         features: [
-           "Custom equipment design",
-           "Specialized sports gear",
-           "Professional consultation",
-           "Custom manufacturing",
-           "Quality assurance",
-           "3-year warranty included"
-         ],
-         specifications: {
-           "Customization": "Based on requirements",
-           "Material": "Premium quality",
-           "Design": "Professional consultation",
-           "Manufacturing": "Custom made",
-           "Quality": "ISO certified",
-           "Warranty": "3 years"
-         }
-       }
+      }
     };
 
     const normalizedName = name?.toLowerCase().replace(/\s+/g, '-');

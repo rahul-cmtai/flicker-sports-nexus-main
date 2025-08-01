@@ -6,18 +6,22 @@ import { ArrowRight, Filter } from 'lucide-react';
 
 const Products = () => {
   const allProducts = [
-    { name: 'Cricket', image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=300&fit=crop', category: 'Outdoor' },
-    { name: 'Football', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop', category: 'Outdoor' },
-    { name: 'Badminton', image: 'https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=400&h=300&fit=crop', category: 'Indoor' },
-    { name: 'Kabaddi', image: 'https://images.unsplash.com/photo-1622546016830-a02e0a531fbb?w=400&h=300&fit=crop', category: 'Outdoor' },
-    { name: 'Hockey', image: 'https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=400&h=300&fit=crop', category: 'Outdoor' },
-    { name: 'Table Tennis', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop', category: 'Indoor' },
-    { name: 'Outdoor Gym', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop', category: 'Outdoor' },
-    { name: 'Athletics', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop', category: 'Outdoor' },
     { name: 'Basketball', image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=300&fit=crop', category: 'Indoor' },
-    { name: 'Volleyball', image: 'https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=400&h=300&fit=crop', category: 'Both' },
+    { name: 'Pickleball', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop', category: 'Outdoor' },
+    { name: 'Badminton', image: 'https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=400&h=300&fit=crop', category: 'Indoor' },
     { name: 'Lawn Tennis', image: 'https://images.unsplash.com/photo-1622546016830-a02e0a531fbb?w=400&h=300&fit=crop', category: 'Outdoor' },
-    { name: 'Kho-Kho', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop', category: 'Outdoor' }
+    { name: 'Foosball', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop', category: 'Indoor' },
+    { name: 'Volleyball', image: 'https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=400&h=300&fit=crop', category: 'Both' },
+    { name: 'Handball', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop', category: 'Indoor' },
+    { name: 'Boxing Ring', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop', category: 'Indoor' },
+    { name: 'Football', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop', category: 'Outdoor' },
+    { name: 'Table Tennis', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop', category: 'Indoor' },
+    { name: 'Pool and Snooker Tables', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop', category: 'Indoor' },
+    { name: 'Gymnastics', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop', category: 'Indoor' },
+    { name: 'Hockey', image: 'https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=400&h=300&fit=crop', category: 'Outdoor' },
+    { name: 'Dugout', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop', category: 'Outdoor' },
+    { name: 'Outdoor Gym and Children Play Equipment', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop', category: 'Outdoor' },
+    { name: 'Sports Flooring', image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop', category: 'Both' }
   ];
 
   return (

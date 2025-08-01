@@ -8,10 +8,10 @@ const Navbar = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const allProducts = [
-    'Basketball', 'Badminton', 'Football', 'Lawn Tennis', 'Volleyball', 
-    'Table Tennis', 'Outdoor Gym', 'Flooring', 'Pool Tables', 'Foosball',
-    'Handball', 'Gymnastics', 'Boxing Ring', 'Hockey', 'Cricket', 'Kabaddi',
-    'Kho-Kho', 'Athletics', 'Swimming', 'Other'
+    'Basketball', 'Pickleball', 'Badminton', 'Lawn Tennis', 'Foosball', 
+    'Volleyball', 'Handball', 'Boxing Ring', 'Football', 'Table Tennis',
+    'Pool and Snooker Tables', 'Gymnastics', 'Hockey', 'Dugout', 
+    'Outdoor Gym and Children Play Equipment', 'Sports Flooring'
   ];
 
   return (

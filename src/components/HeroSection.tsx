@@ -52,7 +52,7 @@ const HeroSection = () => {
           {/* Stats Bar */}
           <div className="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-12 mb-10">
             <div className="text-center">
-              <div className="text-3xl font-bold text-accent mb-1">25+</div>
+              <div className="text-3xl font-bold text-accent mb-1">5+</div>
               <div className="text-gray-300 text-sm">Years Experience</div>
             </div>
             <div className="hidden md:block w-px h-12 bg-gray-500"></div>

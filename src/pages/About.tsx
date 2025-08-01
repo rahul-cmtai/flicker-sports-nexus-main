@@ -25,7 +25,7 @@ const About = () => {
               About Flicker Sports
             </h1>
             <p className="text-xl text-foreground leading-relaxed">
-              Powering athletic excellence for over 25 years with world-class sports equipment 
+              Powering athletic excellence for over 5 years with world-class sports equipment 
               that empowers athletes, teams, and institutions to achieve peak performance.
             </p>
           </div>
@@ -64,7 +64,7 @@ const About = () => {
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-8 text-foreground/90 text-lg font-semibold">
                 <li className="flex items-center gap-3">
                   <Award className="w-6 h-6 text-accent drop-shadow" />
-                  25+ Years of Excellence
+                  5+ Years of Excellence
                 </li>
                 <li className="flex items-center gap-3">
                   <Users className="w-6 h-6 text-primary drop-shadow" />

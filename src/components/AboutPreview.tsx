@@ -6,7 +6,7 @@ const AboutPreview = () => {
   const stats = [
     {
       icon: Award,
-      number: '25+',
+      number: '5+',
       label: 'Years of Excellence',
       description: 'Decades of experience in sports equipment manufacturing'
     },

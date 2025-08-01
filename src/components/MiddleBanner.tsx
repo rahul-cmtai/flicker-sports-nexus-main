@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Energy from '@/assets/Home/energy.png';
 import { ArrowRight, CheckCircle } from 'lucide-react'; // Added CheckCircle for bullet points
 
 const MiddleBanner = () => {
@@ -10,7 +11,7 @@ const MiddleBanner = () => {
           {/* Image Side */}
           <div className="relative w-full lg:w-1/2 flex justify-center items-center">
             <img
-              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200&h=800&fit=crop" // Adjusted height for better aspect ratio
+              src={Energy} // Adjusted height for better aspect ratio
               alt="Sports Facility Transformation"
               className="rounded-xl shadow-2xl transform transition-transform duration-500 hover:scale-105" // Enhanced image styling
             />
