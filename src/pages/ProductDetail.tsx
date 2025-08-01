@@ -4,6 +4,13 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { ArrowRight, Share2, Heart, ShoppingCart, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+//images import
+import Basketball1 from '@/assets/products/basketball-1.jpg';
+import Basketball2 from '@/assets/products/basketball-2.jpg';
+import Basketball3 from '@/assets/products/basketball-3.jpg';
+import Basketball4 from '@/assets/products/basketball-6.jpg';
+
+
 
 interface ProductSpecifications {
   [key: string]: string;
@@ -35,10 +42,10 @@ const ProductDetail = () => {
         rating: 4.6,
         reviews: 67,
         images: [
-          "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600&h=600&fit=crop"
+          Basketball1,
+          Basketball2,
+          Basketball3,
+          Basketball4
         ],
         description: "Professional basketball equipment including hoops, backboards, and court systems. Built for durability and performance.",
         features: [
@@ -596,14 +603,14 @@ const ProductDetail = () => {
                   <ShoppingCart className="w-5 h-5 mr-2" />
                   Request Quote
                 </Button>
-                <Button variant="outline" className="flex items-center gap-2">
+                {/* <Button variant="outline" className="flex items-center gap-2">
                   <Heart className="w-5 h-5" />
                   Save
                 </Button>
                 <Button variant="outline" className="flex items-center gap-2">
                   <Share2 className="w-5 h-5" />
                   Share
-                </Button>
+                </Button> */}
               </div>
 
               <div className="bg-muted/50 rounded-lg p-6">
