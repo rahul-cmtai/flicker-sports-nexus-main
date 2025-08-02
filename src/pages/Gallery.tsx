@@ -66,7 +66,6 @@ import TennisPostAnchor3 from '@/assets/products/Lawn Tennis  Post ( ( Fixed Wit
 
   // Football imports
 import FootballMain from '@/assets/products/Football.jpg';
-import FootballAlt from '@/assets/products/football-1.jpg';
 
   // Volleyball imports
   import VolleyballMain from '@/assets/products/Volleyball.jpg';
@@ -184,7 +183,7 @@ import FootballAlt from '@/assets/products/football-1.jpg';
         title: "Football Equipment",
         category: "football",
         image: FootballMain,
-        images: [FootballMain, FootballAlt]
+        images: [FootballMain]
       },
 
       // Badminton Equipment
