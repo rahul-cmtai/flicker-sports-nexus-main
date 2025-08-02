@@ -4,13 +4,88 @@
   import { Camera, Video, ArrowRight, X } from 'lucide-react';
   import { Link } from 'react-router-dom';
   // images import
+  // Basketball imports
   import Basketball1 from '@/assets/products/basketball-1.jpg';
-import Basketball2 from '@/assets/products/basketball-2.jpg';
-import Basketball3 from '@/assets/products/basketball-3.jpg';
-import Basketball4 from '@/assets/products/basketball-4.jpg';
-import Basketball5 from '@/assets/products/basketball-5.jpg';
-import Basketball6 from '@/assets/products/basketball-6.jpg';
+  import Basketball2 from '@/assets/products/basketball-2.jpg';
+  import Basketball3 from '@/assets/products/basketball-3.jpg';
+  import Basketball4 from '@/assets/products/basketball-4.jpg';
+  import Basketball5 from '@/assets/products/basketball-5.jpg';
+  import Basketball6 from '@/assets/products/basketball-6.jpg';
+  import BasketballMain from '@/assets/products/basketball.jpg';
+  import BasketballAlt from '@/assets/products/baskehyhgtball-1.jpg';
 
+  // Basketball Post imports
+  import BasketballPostFixed1 from '@/assets/products/Basketball Post ( Fixed (1.20 MTR EXT. )-1.jpg';
+  import BasketballPostFixed2 from '@/assets/products/Basketball Post ( Fixed (1.20 MTR EXT. )-2.jpg';
+  import BasketballPostFixed3 from '@/assets/products/Basketball Post ( Fixed (1.20 MTR EXT. )-3.jpg';
+  import BasketballPostFixed4 from '@/assets/products/Basketball Post ( Fixed (1.20 MTR EXT. )-4.jpg';
+  import BasketballPostFixed5 from '@/assets/products/Basketball Post ( Fixed (1.20 MTR EXT. )-5.jpg';
+  import BasketballPostFixedExt1 from '@/assets/products/Basketball Post (Fixed 2.20 MTR EXT.)-1.jpg';
+  import BasketballPostFixedExt3 from '@/assets/products/Basketball Post (Fixed 2.20 MTR EXT.)-3.jpg';
+  import BasketballPostFixedExt4 from '@/assets/products/Basketball Post (Fixed 2.20 MTR EXT.)-4.jpg';
+  import BasketballPostFoundation1 from '@/assets/products/Basketball Post ( Fixed With Foundation)-1.jpg';
+  import BasketballPostFoundation2 from '@/assets/products/Basketball Post ( Fixed With Foundation)-2.jpg';
+  import BasketballPostFoundation3 from '@/assets/products/Basketball Post ( Fixed With Foundation)-3.jpg';
+  import BasketballPostMovable1 from '@/assets/products/Basketball Post (Movable)-1.jpg';
+  import BasketballPostMovable2 from '@/assets/products/Basketball Post (Movable)-2.jpg';
+  import BasketballPostMovable3 from '@/assets/products/Basketball Post (Movable)-3.jpg';
+  import BasketballPostMovable4 from '@/assets/products/Basketball Post (Movable)-4.jpg';
+  import BasketballPostMovableHeight1 from '@/assets/products/Basketball Post ( Movable With Height  Adjustable)-1.jpg';
+  import BasketballPostMovableHeight2 from '@/assets/products/Basketball Post ( Movable With Height  Adjustable)-2.jpg';
+  import BasketballPostMovableX1 from '@/assets/products/Basketball Post ( Movable X Design)-1.jpg';
+  import BasketballPostMovableX2 from '@/assets/products/Basketball Post ( Movable X Design)-2.jpg';
+  import BasketballPostHydraulic1 from '@/assets/products/Basketball Post Movable ( Manual  Hydraulic )-1.jpg';
+  import BasketballPostHydraulic2 from '@/assets/products/Basketball Post Movable ( Manual  Hydraulic )-2.jpg';
+  import BasketballPostHydraulic3 from '@/assets/products/Basketball Post Movable ( Manual  Hydraulic )-3.jpg';
+  import BasketballPoles1 from '@/assets/products/Basketball poles ( Fix & Height Adjustable)-1.jpg';
+  import BasketballPoles2 from '@/assets/products/Basketball poles ( Fix & Height Adjustable)-2.jpg';
+  import BasketballRing1 from '@/assets/products/Basketball Ring ( Dunking & Simple solid Rim)-1.jpg';
+  import BasketballRing2 from '@/assets/products/Basketball Ring ( Dunking & Simple solid Rim)-2.jpg';
+  import BasketballRing3 from '@/assets/products/Basketball Ring ( Dunking & Simple solid Rim)-3.jpg';
+
+  // Badminton imports
+  import BadmintonMain from '@/assets/products/Badminton.jpg';
+  import BadmintonPostFixed1 from '@/assets/products/Badminton Post ( Fixed )-1.jpg';
+  import BadmintonPostFixed2 from '@/assets/products/Badminton Post ( Fixed )-2.jpg';
+  import BadmintonPostFixed3 from '@/assets/products/Badminton Post ( Fixed )-3.jpg';
+  import BadmintonPostMovable1 from '@/assets/products/Badminton Post ( Movable)-1.jpg';
+  import BadmintonPostMovable2 from '@/assets/products/Badminton Post ( Movable)-2.jpg';
+  import BadmintonPostMovable3 from '@/assets/products/Badminton Post ( Movable)-3.jpg';
+  import BadmintonPostMovable4 from '@/assets/products/Badminton Post ( Movable)-4.jpg';
+  import BadmintonPostMovable5 from '@/assets/products/Badminton Post ( Movable)-5.jpg';
+  import BadmintonPostMovable6 from '@/assets/products/Badminton Post ( Movable)-6.jpg';
+  import BadmintonPostMovable7 from '@/assets/products/Badminton Post ( Movable)-7.jpg';
+  import BadmintonPostMovable8 from '@/assets/products/Badminton Post ( Movable)-8.jpg';
+
+  // Tennis imports
+import TennisMain from '@/assets/products/Lawn Tennis.jpg';
+import TennisAlt from '@/assets/products/tennis.jpg';
+import TennisPostAnchor1 from '@/assets/products/Lawn Tennis  Post ( ( Fixed With  Anchor Bolt )-1.jpg';
+import TennisPostAnchor2 from '@/assets/products/Lawn Tennis  Post ( ( Fixed With  Anchor Bolt )-2.jpg';
+import TennisPostAnchor3 from '@/assets/products/Lawn Tennis  Post ( ( Fixed With  Anchor Bolt )-3.jpg';
+
+  // Football imports
+import FootballMain from '@/assets/products/Football.jpg';
+import FootballAlt from '@/assets/products/football-1.jpg';
+
+  // Volleyball imports
+  import VolleyballMain from '@/assets/products/Volleyball.jpg';
+
+  // Other sports imports
+  import BoxingRing from '@/assets/products/Boxing Ring.jpg';
+  import Foosball from '@/assets/products/Foosball.jpg';
+  import Gymnastics from '@/assets/products/Gymnastics.jpg';
+  import Handball from '@/assets/products/Handball.jpg';
+  import Hockey from '@/assets/products/Hockey.jpg';
+  import Pickleball from '@/assets/products/Pickleball.jpg';
+  import PoolSnooker from '@/assets/products/Pool and Snooker Tables.jpg';
+
+  // Flooring and Gym imports
+  import SportsFlooring from '@/assets/products/Sports-flooring.jpg';
+  import OutdoorGym from '@/assets/products/outdoor-gym.png';
+
+  // Additional images
+  import Dugouts from '@/assets/products/dugouts-premium-1.jpg';
 
   const Gallery = () => {
     const [selectedCategory, setSelectedCategory] = useState('all');
@@ -24,102 +99,217 @@ import Basketball6 from '@/assets/products/basketball-6.jpg';
       { id: 'football', name: 'Football Equipment' },
       { id: 'flooring', name: 'Sports Flooring' },
       { id: 'outdoor-gym', name: 'Outdoor Gym' },
-      { id: 'table-tennis', name: 'Table Tennis' },
-      { id: 'volleyball', name: 'Volleyball' },
       { id: 'badminton', name: 'Badminton' },
-      { id: 'tennis', name: 'Lawn Tennis' }
+      { id: 'tennis', name: 'Lawn Tennis' },
+      { id: 'volleyball', name: 'Volleyball' },
+      { id: 'other-sports', name: 'Other Sports' }
     ];
 
     const galleryItems = [
+      // Basketball Equipment
       {
         id: 1,
-        title: "Basketball Equipment 1",
+        title: "Basketball Equipment Collection",
         category: "basketball",
-        image: Basketball1,
-        images: [Basketball1]
+        image: BasketballMain,
+        images: [BasketballMain, Basketball1, Basketball2, Basketball3, Basketball4, Basketball5, Basketball6, BasketballAlt]
       },
       {
         id: 2,
-        title: "Basketball Equipment 2",
+        title: "Basketball Posts - Fixed (1.20 MTR EXT)",
         category: "basketball",
-        image: Basketball2,
-        images: [Basketball2]
+        image: BasketballPostFixed1,
+        images: [BasketballPostFixed1, BasketballPostFixed2, BasketballPostFixed3, BasketballPostFixed4, BasketballPostFixed5]
       },
       {
         id: 3,
-        title: "Basketball Equipment 3",
+        title: "Basketball Posts - Fixed (2.20 MTR EXT)",
         category: "basketball",
-        image: Basketball3,
-        images: [Basketball3]
+        image: BasketballPostFixedExt1,
+        images: [BasketballPostFixedExt1, BasketballPostFixedExt3, BasketballPostFixedExt4]
       },
       {
         id: 4,
-        title: "Basketball Equipment 4",
+        title: "Basketball Posts - Fixed with Foundation",
         category: "basketball",
-        image: Basketball4,
-        images: [Basketball4]
+        image: BasketballPostFoundation1,
+        images: [BasketballPostFoundation1, BasketballPostFoundation2, BasketballPostFoundation3]
       },
       {
         id: 5,
-        title: "Basketball Equipment 5",
+        title: "Basketball Posts - Movable",
         category: "basketball",
-        image: Basketball5,
-        images: [Basketball5]
+        image: BasketballPostMovable1,
+        images: [BasketballPostMovable1, BasketballPostMovable2, BasketballPostMovable3, BasketballPostMovable4]
       },
       {
         id: 6,
-        title: "Basketball Equipment 6",
+        title: "Basketball Posts - Movable with Height Adjustable",
         category: "basketball",
-        image: Basketball6,
-        images: [Basketball6]
+        image: BasketballPostMovableHeight1,
+        images: [BasketballPostMovableHeight1, BasketballPostMovableHeight2]
       },
       {
         id: 7,
-        title: "Football Equipment",
-        category: "football", 
-        image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
-        images: [
-          "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
-          "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=400&h=300&fit=crop"
-        ]
+        title: "Basketball Posts - Movable X Design",
+        category: "basketball",
+        image: BasketballPostMovableX1,
+        images: [BasketballPostMovableX1, BasketballPostMovableX2]
       },
       {
         id: 8,
-        title: "Sports Flooring",
-        category: "flooring",
-        image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
-        images: [
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
-          "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=400&h=300&fit=crop"
-        ]
+        title: "Basketball Posts - Manual Hydraulic",
+        category: "basketball",
+        image: BasketballPostHydraulic1,
+        images: [BasketballPostHydraulic1, BasketballPostHydraulic2, BasketballPostHydraulic3]
       },
       {
         id: 9,
-        title: "Outdoor Gym Equipment",
-        category: "outdoor-gym",
-        image: "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=400&h=300&fit=crop",
-        images: [
-          "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=400&h=300&fit=crop",
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
-        ]
+        title: "Basketball Poles - Fix & Height Adjustable",
+        category: "basketball",
+        image: BasketballPoles1,
+        images: [BasketballPoles1, BasketballPoles2]
       },
       {
         id: 10,
-        title: "Table Tennis Equipment",
-        category: "table-tennis",
-        image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
-        images: [
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop"
-        ]
+        title: "Basketball Rings - Dunking & Simple Solid Rim",
+        category: "basketball",
+        image: BasketballRing1,
+        images: [BasketballRing1, BasketballRing2, BasketballRing3]
       },
+
+      // Football Equipment
       {
         id: 11,
+        title: "Football Equipment",
+        category: "football",
+        image: FootballMain,
+        images: [FootballMain, FootballAlt]
+      },
+
+      // Badminton Equipment
+      {
+        id: 12,
+        title: "Badminton Equipment",
+        category: "badminton",
+        image: BadmintonMain,
+        images: [BadmintonMain]
+      },
+      {
+        id: 13,
+        title: "Badminton Posts - Fixed",
+        category: "badminton",
+        image: BadmintonPostFixed1,
+        images: [BadmintonPostFixed1, BadmintonPostFixed2, BadmintonPostFixed3]
+      },
+      {
+        id: 14,
+        title: "Badminton Posts - Movable",
+        category: "badminton",
+        image: BadmintonPostMovable1,
+        images: [BadmintonPostMovable1, BadmintonPostMovable2, BadmintonPostMovable3, BadmintonPostMovable4, BadmintonPostMovable5, BadmintonPostMovable6, BadmintonPostMovable7, BadmintonPostMovable8]
+      },
+
+      // Tennis Equipment
+      {
+        id: 15,
+        title: "Lawn Tennis Equipment",
+        category: "tennis",
+        image: TennisMain,
+        images: [TennisMain, TennisAlt]
+      },
+      {
+        id: 16,
+        title: "Tennis Posts - Fixed with Anchor Bolt",
+        category: "tennis",
+        image: TennisPostAnchor1,
+        images: [TennisPostAnchor1, TennisPostAnchor2, TennisPostAnchor3]
+      },
+
+
+      // Volleyball Equipment
+      {
+        id: 18,
         title: "Volleyball Equipment",
         category: "volleyball",
-        image: "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=400&h=300&fit=crop",
-        images: [
-          "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=400&h=300&fit=crop"
-        ]
+        image: VolleyballMain,
+        images: [VolleyballMain]
+      },
+
+      // Sports Flooring
+      {
+        id: 19,
+        title: "Sports Flooring",
+        category: "flooring",
+        image: SportsFlooring,
+        images: [SportsFlooring]
+      },
+
+      // Outdoor Gym
+      {
+        id: 20,
+        title: "Outdoor Gym Equipment",
+        category: "outdoor-gym",
+        image: OutdoorGym,
+        images: [OutdoorGym]
+      },
+
+      // Other Sports
+      {
+        id: 21,
+        title: "Boxing Ring",
+        category: "other-sports",
+        image: BoxingRing,
+        images: [BoxingRing]
+      },
+      {
+        id: 22,
+        title: "Foosball Tables",
+        category: "other-sports",
+        image: Foosball,
+        images: [Foosball]
+      },
+      {
+        id: 23,
+        title: "Gymnastics Equipment",
+        category: "other-sports",
+        image: Gymnastics,
+        images: [Gymnastics]
+      },
+      {
+        id: 24,
+        title: "Handball Equipment",
+        category: "other-sports",
+        image: Handball,
+        images: [Handball]
+      },
+      {
+        id: 25,
+        title: "Hockey Equipment",
+        category: "other-sports",
+        image: Hockey,
+        images: [Hockey]
+      },
+      {
+        id: 26,
+        title: "Pickleball Equipment",
+        category: "other-sports",
+        image: Pickleball,
+        images: [Pickleball]
+      },
+      {
+        id: 27,
+        title: "Pool and Snooker Tables",
+        category: "other-sports",
+        image: PoolSnooker,
+        images: [PoolSnooker]
+      },
+      {
+        id: 28,
+        title: "Premium Dugouts",
+        category: "other-sports",
+        image: Dugouts,
+        images: [Dugouts]
       }
     ];
 
@@ -240,7 +430,7 @@ import Basketball6 from '@/assets/products/basketball-6.jpg';
             <div className="relative max-w-4xl max-h-full">
               <button
                 onClick={closeImageModal}
-                className="absolute top-4 right-4 text-white hover:text-gray-300 z-10"
+                className="absolute top-4 right-4 text-blue-500 hover:text-blue-400 z-10"
               >
                 <X className="w-8 h-8" />
               </button>
@@ -257,14 +447,14 @@ import Basketball6 from '@/assets/products/basketball-6.jpg';
                   <button
                     onClick={prevImage}
                     disabled={currentImageIndex === 0}
-                    className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 disabled:opacity-50"
+                    className="absolute left-4 top-1/2 transform -translate-y-1/2 text-blue-500 hover:text-blue-400 disabled:opacity-50"
                   >
                     <ArrowRight className="w-8 h-8 rotate-180" />
                   </button>
                   <button
                     onClick={nextImage}
                     disabled={currentImageIndex === selectedImages.length - 1}
-                    className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 disabled:opacity-50"
+                    className="absolute right-4 top-1/2 transform -translate-y-1/2 text-blue-500 hover:text-blue-400 disabled:opacity-50"
                   >
                     <ArrowRight className="w-8 h-8" />
                   </button>

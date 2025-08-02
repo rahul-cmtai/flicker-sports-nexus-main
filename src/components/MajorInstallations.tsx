@@ -7,7 +7,7 @@ const MajorInstallations = () => {
     {
       name: "National Sports Academy",
       location: "Delhi",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
       website: "#"
     },
     {
@@ -19,25 +19,25 @@ const MajorInstallations = () => {
     {
       name: "Central University Sports",
       location: "Bangalore",
-      image: "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=400&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
       website: "#"
     },
     {
       name: "Defense Sports Academy",
       location: "Pune",
-      image: "https://images.unsplash.com/photo-1622546016830-a02e0a531fbb?w=400&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
       website: "#"
     },
     {
       name: "Olympic Training Center",
       location: "Hyderabad",
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
       website: "#"
     },
     {
       name: "Regional Sports Hub",
       location: "Chennai",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop", 
       website: "#"
     }
   ];

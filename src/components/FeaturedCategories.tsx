@@ -1,43 +1,50 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import Football from '@/assets/products/football-1.jpg';
+import Basketball from '@/assets/products/Basketball.jpg';
+import Badminton from '@/assets/products/Badminton.jpg';
+import LawnTennis from '@/assets/products/Lawn Tennis.jpg';
+import OutdoorGym from '@/assets/products/outdoor-gym.png';
+import SportsFlooring from '@/assets/products/Sports-flooring.jpg';
+
 
 const categories = [
   {
-    name: 'Cricket',
-    image: 'https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=300&fit=crop',
-    description: 'Professional cricket equipment & nets',
-    link: '/products/cricket'
+    name: 'Basketball',
+    image: Basketball,
+    description: 'Professional basketball equipment & courts',
+    link: '/products/basketball'
   },
   {
     name: 'Football',
-    image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop',
+    image: Football,
     description: 'Goals, nets & training equipment',
     link: '/products/football'
   },
   {
     name: 'Badminton',
-    image: 'https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=400&h=300&fit=crop',
+    image: Badminton,
     description: 'Courts, nets & professional gear',
     link: '/products/badminton'
   },
   {
-    name: 'Kabaddi',
-    image: 'https://images.unsplash.com/photo-1622546016830-a02e0a531fbb?w=400&h=300&fit=crop',
-    description: 'Professional kabaddi courts & equipment',
-    link: '/products/kabaddi'
+    name: 'Lawn Tennis',
+    image: LawnTennis,
+    description: 'Professional tennis courts & equipment',
+    link: '/products/lawn-tennis'
   },
   {
-    name: 'Gymnasium',
-    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop',
-    description: 'Complete gym setups & equipment',
-    link: '/products/outdoor-gym'
+    name: 'Outdoor Gym and Children Play Equipment',
+    image: OutdoorGym,
+    description: 'Complete gym setups & play equipment',
+    link: '/products/outdoor-gym-and-children-play-equipment'
   },
   {
-    name: 'Athletics',
-    image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop',
-    description: 'Track & field equipment',
-    link: '/products/athletics'
+    name: 'Sports Flooring',
+    image: SportsFlooring,
+    description: 'Professional sports flooring solutions',
+    link: '/products/sports-flooring'
   }
 ];
 
