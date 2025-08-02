@@ -3,7 +3,8 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Filter } from 'lucide-react';
-import Basketball from '@/assets/products/Basketball.jpg';
+// Updated image imports with correct file names
+import Basketball from '@/assets/products/basketball.jpg';
 import Table from '@/assets/products/tennis.jpg';
 import Dugout from '@/assets/products/dugouts-premium-1.jpg';
 import OutdoorGym from '@/assets/products/outdoor-gym.png';

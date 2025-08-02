@@ -4,13 +4,57 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { ArrowRight, Share2, Heart, ShoppingCart, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-//images import
+
+// Basketball images - 4 different basketball images
 import Basketball1 from '@/assets/products/basketball-1.jpg';
 import Basketball2 from '@/assets/products/basketball-2.jpg';
 import Basketball3 from '@/assets/products/basketball-3.jpg';
 import Basketball4 from '@/assets/products/basketball-6.jpg';
 
+// Badminton images - 4 different badminton images
+import Badminton1 from '@/assets/products/Badminton Post ( Fixed )-1.jpg';
+import Badminton2 from '@/assets/products/Badminton Post ( Fixed )-2.jpg';
+import Badminton3 from '@/assets/products/Badminton Post ( Movable)-1.jpg';
+import Badminton4 from '@/assets/products/Badminton Post ( Movable)-2.jpg';
 
+// Lawn Tennis images - 4 different tennis images
+import Tennis1 from '@/assets/products/Lawn Tennis.jpg';
+import Tennis2 from '@/assets/products/tennis.jpg';
+import Tennis3 from '@/assets/products/Lawn Tennis.jpg';
+import Tennis4 from '@/assets/products/tennis.jpg';
+
+// Basketball Post images - 4 different basketball post images
+import BasketballPost1 from '@/assets/products/basketball.jpg';
+import BasketballPost2 from '@/assets/products/basketball.jpg';
+import BasketballPost3 from '@/assets/products/basketball.jpg';
+import BasketballPost4 from '@/assets/products/basketball.jpg';
+
+// Basketball Ring images - 3 different basketball ring images + 1 basketball image
+import BasketballRing1 from '@/assets/products/basketball.jpg';
+import BasketballRing2 from '@/assets/products/basketball.jpg';
+import BasketballRing3 from '@/assets/products/basketball.jpg';
+import BasketballRing4 from '@/assets/products/basketball.jpg';
+
+// Other product images - using different images where available
+import Pickleball from '@/assets/products/Pickleball.jpg';
+import Foosball from '@/assets/products/Foosball.jpg';
+import Volleyball from '@/assets/products/Volleyball.jpg';
+import Handball from '@/assets/products/Handball.jpg';
+import BoxingRing from '@/assets/products/Boxing Ring.jpg';
+import Football from '@/assets/products/Football.jpg';
+import Tennis from '@/assets/products/tennis.jpg';
+import SnookerTable from '@/assets/products/Pool and Snooker Tables.jpg';
+import Gymnastics from '@/assets/products/Gymnastics.jpg';
+import Hockey from '@/assets/products/Hockey.jpg';
+import Dugout from '@/assets/products/dugouts-premium-1.jpg';
+import OutdoorGym from '@/assets/products/outdoor-gym.png';
+import SportsFlooring from '@/assets/products/Sports-flooring.jpg';
+
+// Additional images for variety
+import Basketball5 from '@/assets/products/basketball-5.jpg';
+import BasketballManual from '@/assets/products/Basketball Post Movable ( Manual  Hydraulic )-1.jpg';
+import BasketballXDesign from '@/assets/products/Basketball Post ( Movable X Design)-1.jpg';
+import BasketballFixed from '@/assets/products/Basketball Post (Fixed 2.20 MTR EXT.)-1.jpg';
 
 interface ProductSpecifications {
   [key: string]: string;
@@ -71,10 +115,10 @@ const ProductDetail = () => {
         rating: 4.5,
         reviews: 34,
         images: [
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+          Pickleball,
+          Pickleball,
+          Pickleball,
+          Pickleball
         ],
         description: "Professional pickleball courts, nets, and equipment for indoor and outdoor facilities. Perfect for schools, clubs, and recreational centers.",
         features: [
@@ -100,10 +144,10 @@ const ProductDetail = () => {
         rating: 4.8,
         reviews: 67,
         images: [
-          "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+          Badminton1,
+          Badminton2,
+          Badminton3,
+          Badminton4
         ],
         description: "Professional badminton courts, nets, and equipment for indoor and outdoor facilities. Built to international standards with premium materials.",
         features: [
@@ -129,10 +173,10 @@ const ProductDetail = () => {
         rating: 4.8,
         reviews: 89,
         images: [
-          "https://images.unsplash.com/photo-1622546016830-a02e0a531fbb?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1622546016830-a02e0a531fbb?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+          Tennis1,
+          Tennis2,
+          Tennis3,
+          Tennis4
         ],
         description: "Professional tennis courts, nets, and equipment for both indoor and outdoor facilities. Built to international standards.",
         features: [
@@ -158,10 +202,10 @@ const ProductDetail = () => {
         rating: 4.4,
         reviews: 23,
         images: [
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+          Foosball,
+          Foosball,
+          Foosball,
+          Foosball
         ],
         description: "Professional foosball tables for entertainment and recreation. Perfect for clubs, offices, and home use.",
         features: [
@@ -187,10 +231,10 @@ const ProductDetail = () => {
         rating: 4.5,
         reviews: 43,
         images: [
-          "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+          Volleyball,
+          Volleyball,
+          Volleyball,
+          Volleyball
         ],
         description: "Professional volleyball equipment including nets, posts, and court systems. Perfect for schools, clubs, and beach volleyball facilities.",
         features: [
@@ -216,10 +260,10 @@ const ProductDetail = () => {
         rating: 4.3,
         reviews: 19,
         images: [
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+          Handball,
+          Handball,
+          Handball,
+          Handball
         ],
         description: "Professional handball equipment including goals, courts, and training equipment for indoor facilities.",
         features: [
@@ -245,10 +289,10 @@ const ProductDetail = () => {
         rating: 4.6,
         reviews: 38,
         images: [
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+          BoxingRing,
+          BoxingRing,
+          BoxingRing,
+          BoxingRing
         ],
         description: "Professional boxing ring equipment for training facilities and clubs. Complete setup with safety features and professional standards.",
         features: [
@@ -274,10 +318,10 @@ const ProductDetail = () => {
         rating: 4.7,
         reviews: 89,
         images: [
-          "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=600&fit=crop"
+          Football,
+          Football,
+          Football,
+          Football
         ],
         description: "Complete football equipment including goals, nets, training equipment, and field marking systems. Perfect for schools, clubs, and professional football facilities.",
         features: [
@@ -303,10 +347,10 @@ const ProductDetail = () => {
         rating: 4.5,
         reviews: 78,
         images: [
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+          Tennis,
+          Tennis,
+          Tennis,
+          Tennis
         ],
         description: "Professional table tennis tables, nets, and equipment for indoor facilities. Perfect for schools, clubs, and recreational centers.",
         features: [
@@ -332,10 +376,10 @@ const ProductDetail = () => {
         rating: 4.5,
         reviews: 34,
         images: [
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+          SnookerTable,
+          SnookerTable,
+          SnookerTable,
+          SnookerTable
         ],
         description: "Professional pool and snooker tables for clubs, recreation centers, and home use. High-quality construction with premium materials.",
         features: [
@@ -361,10 +405,10 @@ const ProductDetail = () => {
         rating: 4.7,
         reviews: 45,
         images: [
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+          Gymnastics,
+          Gymnastics,
+          Gymnastics,
+          Gymnastics
         ],
         description: "Complete gymnastics equipment for training facilities, schools, and clubs. Professional-grade equipment for all skill levels.",
         features: [
@@ -390,10 +434,10 @@ const ProductDetail = () => {
         rating: 4.7,
         reviews: 45,
         images: [
-          "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+          Hockey,
+          Hockey,
+          Hockey,
+          Hockey
         ],
         description: "Professional hockey equipment including goals, nets, training equipment, and field marking systems for India's national sport.",
         features: [
@@ -419,10 +463,10 @@ const ProductDetail = () => {
         rating: 4.4,
         reviews: 28,
         images: [
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+          Dugout,
+          Dugout,
+          Dugout,
+          Dugout
         ],
         description: "Professional dugout equipment for sports facilities and stadiums. Complete setup with seating, storage, and safety features.",
         features: [
@@ -448,10 +492,10 @@ const ProductDetail = () => {
         rating: 4.8,
         reviews: 123,
         images: [
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+          OutdoorGym,
+          OutdoorGym,
+          OutdoorGym,
+          OutdoorGym
         ],
         description: "Complete outdoor gym setups with professional fitness equipment and children's play equipment. Perfect for parks, schools, and community centers across India.",
         features: [
@@ -477,10 +521,10 @@ const ProductDetail = () => {
         rating: 4.6,
         reviews: 89,
         images: [
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&h=600&fit=crop",
-          "https://images.unsplash.com/photo-1574680096145-d05b474e2155?w=600&h=600&fit=crop"
+          SportsFlooring,
+          SportsFlooring,
+          SportsFlooring,
+          SportsFlooring
         ],
         description: "Professional sports flooring solutions for indoor and outdoor facilities. Anti-slip, durable, and designed for various sports.",
         features: [
@@ -503,7 +547,7 @@ const ProductDetail = () => {
     };
 
     const normalizedName = name?.toLowerCase().replace(/\s+/g, '-');
-    return productDatabase[normalizedName] || productDatabase['cricket'];
+    return productDatabase[normalizedName] || productDatabase['basketball'];
   };
 
   const product = getProductData(productName);

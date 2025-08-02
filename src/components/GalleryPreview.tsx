@@ -1,31 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Camera, Video, ArrowRight } from 'lucide-react';
+import Basketball from '@/assets/products/Basketball.jpg';
+import Football from '@/assets/products/Football.jpg';
+import SportsFlooring from '@/assets/products/Sports-flooring.jpg';
+import OutdoorGym from '@/assets/products/outdoor-gym.png';
 
 const GalleryPreview = () => {
   const galleryItems = [
     {
       title: "Basketball Equipment",
       count: 19,
-      image: "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=400&h=300&fit=crop",
+      image: Basketball,
       link: "/gallery/basketball-equipment"
     },
     {
       title: "Football Equipment", 
       count: 15,
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+      image: Football,
       link: "/gallery/football-equipment"
     },
     {
       title: "Sports Flooring",
       count: 13,
-      image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+      image: SportsFlooring,
       link: "/gallery/sports-flooring"
     },
     {
       title: "Outdoor Gym Equipment",
       count: 32,
-      image: "https://images.unsplash.com/photo-1594736797933-d0cc4634deed?w=400&h=300&fit=crop",
+      image: OutdoorGym,
       link: "/gallery/outdoor-gym"
     }
   ];
@@ -77,11 +81,11 @@ const GalleryPreview = () => {
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                <div className="absolute top-4 right-4">
+                {/* <div className="absolute top-4 right-4">
                   <span className="bg-accent text-white px-2 py-1 rounded text-xs font-medium">
                     {item.count} Photos
                   </span>
-                </div>
+                </div> */}
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="text-lg font-bold group-hover:text-accent transition-colors">
                     {item.title}
