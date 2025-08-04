@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { Camera, Video, ArrowRight } from 'lucide-react';
 import Basketball from '@/assets/products/Basketball.jpg';
 import Football from '@/assets/products/Football.jpg';
-import SportsFlooring from '@/assets/products/Sports-flooring.jpg';
-import OutdoorGym from '@/assets/products/outdoor-gym.png';
+import SportsFlooring from '@/assets/products/Sports_flooring.jpg';
+import OutdoorGym from '@/assets/products/outdoor_gym.png';
 
 const GalleryPreview = () => {
   const galleryItems = [

@@ -39,9 +39,10 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-secondary mb-2">Address</h3>
                     <p className="text-foreground">
-                      Flicker Sports Industries<br />
-                      Manufacturing Hub, Industrial Area<br />
-                      Pin: 123456, India
+                      <span className="font-bold">FLICKER SPORTS INDUSTRIES</span><br />
+                      Ground floor M N - 877 Islam Nagar Shekh Chowk Maliyana<br />
+                      Pin code 250002<br />
+                      <span className="font-semibold">GST No.:</span> 09BZMPA7204C1ZP
                     </p>
                   </div>
                 </div>
@@ -51,9 +52,9 @@ const Contact = () => {
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-secondary mb-2">Phone</h3>
-                    <p className="text-foreground">+91 (123) 456-7890</p>
-                    <p className="text-foreground">+91 (123) 456-7891</p>
+                    <h3 className="text-lg font-semibold text-secondary mb-2">Contact</h3>
+                    <p className="text-foreground">9045440618</p>
+                    <p className="text-foreground">8858687912</p>
                   </div>
                 </div>
 
@@ -63,8 +64,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-secondary mb-2">Email</h3>
-                    <p className="text-foreground">info@flickersports.com</p>
-                    <p className="text-foreground">sales@flickersports.com</p>
+                    <p className="text-foreground">flickersports@gmail.com</p>
                   </div>
                 </div>
 
@@ -73,10 +73,11 @@ const Contact = () => {
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-secondary mb-2">Business Hours</h3>
-                    <p className="text-foreground">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                    <p className="text-foreground">Saturday: 9:00 AM - 2:00 PM</p>
-                    <p className="text-foreground">Sunday: Closed</p>
+                    <h3 className="text-lg font-semibold text-secondary mb-2">Business Details</h3>
+                    <p className="text-foreground mb-1"><span className="font-semibold">Entry Type:</span> Proprietorship</p>
+                    <p className="text-foreground mb-1"><span className="font-semibold">Registration Type:</span> Regular</p>
+                    <p className="text-foreground mb-1"><span className="font-semibold">Nature of Business:</span> Factory, Manufacturing, Wholesale, Business</p>
+                    <p className="text-foreground mb-1"><span className="font-semibold">Registration Date:</span> 10/11/2020</p>
                   </div>
                 </div>
               </div>

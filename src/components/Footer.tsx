@@ -21,8 +21,10 @@ const Footer = () => {
               <span className="text-xl font-bold">Flicker Sports</span>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Powering Performance Across India. We manufacture high-performance sports equipment 
-              trusted by athletes and institutions across India.
+              <span className="font-bold">FLICKER SPORTS INDUSTRIES</span><br />
+              Ground floor M N - 877 Islam Nagar Shekh Chowk Maliyana<br />
+              Pin code 250002<br />
+              <span className="font-semibold">GST No.:</span> 09BZMPA7204C1ZP
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-accent transition-colors">
@@ -111,17 +113,17 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-accent mt-0.5 flex-shrink-0" />
                 <p className="text-gray-300 text-sm">
-                  Manufacturing Hub<br />
-                  Industrial Area, India
+                  Ground floor M N - 877 Islam Nagar Shekh Chowk Maliyana<br />
+                  Pin code 250002
                 </p>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-accent flex-shrink-0" />
-                <p className="text-gray-300 text-sm">+91 (123) 456-7890</p>
+                <p className="text-gray-300 text-sm">9045440618 / 8858687912</p>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-accent flex-shrink-0" />
-                <p className="text-gray-300 text-sm">info@flickersports.com</p>
+                <p className="text-gray-300 text-sm">flickersports@gmail.com</p>
               </div>
             </div>
           </div>

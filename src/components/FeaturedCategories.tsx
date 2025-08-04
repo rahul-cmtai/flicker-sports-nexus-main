@@ -4,9 +4,9 @@ import { ArrowRight } from 'lucide-react';
 import Football from '@/assets/products/football-1.jpg';
 import Basketball from '@/assets/products/Basketball.jpg';
 import Badminton from '@/assets/products/Badminton.jpg';
-import LawnTennis from '@/assets/products/Lawn Tennis.jpg';
-import OutdoorGym from '@/assets/products/outdoor-gym.png';
-import SportsFlooring from '@/assets/products/Sports-flooring.jpg';
+import LawnTennis from '@/assets/products/Lawn_Tennis.jpg';
+import OutdoorGym from '@/assets/products/outdoor_gym.png';
+import SportsFlooring from '@/assets/products/Sports_flooring.jpg';
 
 
 const categories = [

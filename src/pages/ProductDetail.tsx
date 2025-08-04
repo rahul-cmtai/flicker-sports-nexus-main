@@ -6,55 +6,100 @@ import { ArrowRight, Share2, Heart, ShoppingCart, Star } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 // Basketball images - 4 different basketball images
-import Basketball1 from '@/assets/products/basketball-1.jpg';
-import Basketball2 from '@/assets/products/basketball-2.jpg';
-import Basketball3 from '@/assets/products/basketball-3.jpg';
-import Basketball4 from '@/assets/products/basketball-6.jpg';
+import Basketball1 from '@/assets/products/basketball_1.jpg';
+import Basketball2 from '@/assets/products/basketball_2.jpg';
+import Basketball3 from '@/assets/products/basketball_3.jpg';
+import Basketball4 from '@/assets/products/basketball_4.jpg';
 
 // Badminton images - 4 different badminton images
-import Badminton1 from '@/assets/products/Badminton Post ( Fixed )-1.jpg';
-import Badminton2 from '@/assets/products/Badminton Post ( Fixed )-2.jpg';
-import Badminton3 from '@/assets/products/Badminton Post ( Movable)-1.jpg';
-import Badminton4 from '@/assets/products/Badminton Post ( Movable)-2.jpg';
+import Badminton1 from '@/assets/products/Badminton_Post_Fixed_1.jpg';
+import Badminton2 from '@/assets/products/Badminton_Post_Fixed_2.jpg';
+import Badminton3 from '@/assets/products/Badminton_Post_Fixed_3.jpg';
+import Badminton4 from '@/assets/products/Badminton_Post_Movable_1.jpg';
 
 // Lawn Tennis images - 4 different tennis images
-import Tennis1 from '@/assets/products/Lawn Tennis.jpg';
+import Tennis1 from '@/assets/products/Lawn_Tennis.jpg';
 import Tennis2 from '@/assets/products/tennis.jpg';
-import Tennis3 from '@/assets/products/Lawn Tennis.jpg';
-import Tennis4 from '@/assets/products/tennis.jpg';
+import Tennis3 from '@/assets/products/Lawn_Tennis_Post_Fixed_With_Anchor_Bolt_1.jpg';
+import Tennis4 from '@/assets/products/Lawn_Tennis_Post_Movable_1.jpg';
 
-// Basketball Post images - 4 different basketball post images
-import BasketballPost1 from '@/assets/products/basketball.jpg';
-import BasketballPost2 from '@/assets/products/basketball.jpg';
-import BasketballPost3 from '@/assets/products/basketball.jpg';
-import BasketballPost4 from '@/assets/products/basketball.jpg';
+// Pickleball images
+import Pickleball1 from '@/assets/products/Pickleball.jpg';
+import Pickleball2 from '@/assets/products/Pickleball_Post_1.jpg';
+import Pickleball3 from '@/assets/products/Pickleball_Post_2.jpg';
+import Pickleball4 from '@/assets/products/Pickleball_Post_3.jpg';
 
-// Basketball Ring images - 3 different basketball ring images + 1 basketball image
-import BasketballRing1 from '@/assets/products/basketball.jpg';
-import BasketballRing2 from '@/assets/products/basketball.jpg';
-import BasketballRing3 from '@/assets/products/basketball.jpg';
-import BasketballRing4 from '@/assets/products/basketball.jpg';
+// Foosball images
+import Foosball1 from '@/assets/products/Foosball.jpg';
+import Foosball2 from '@/assets/products/Foosball_Equipment_1.jpg';
+import Foosball3 from '@/assets/products/Foosball_Equipment_2.jpg';
+import Foosball4 from '@/assets/products/Foosball_Equipment_3.jpg';
 
-// Other product images - using different images where available
-import Pickleball from '@/assets/products/Pickleball.jpg';
-import Foosball from '@/assets/products/Foosball.jpg';
-import Volleyball from '@/assets/products/Volleyball.jpg';
-import Handball from '@/assets/products/Handball.jpg';
-import BoxingRing from '@/assets/products/Boxing Ring.jpg';
-import Football from '@/assets/products/Football.jpg';
-import Tennis from '@/assets/products/tennis.jpg';
-import SnookerTable from '@/assets/products/Pool and Snooker Tables.jpg';
-import Gymnastics from '@/assets/products/Gymnastics.jpg';
-import Hockey from '@/assets/products/Hockey.jpg';
-import Dugout from '@/assets/products/dugouts-premium-1.jpg';
-import OutdoorGym from '@/assets/products/outdoor-gym.png';
-import SportsFlooring from '@/assets/products/Sports-flooring.jpg';
+// Volleyball images
+import Volleyball1 from '@/assets/products/Volleyball.jpg';
+import Volleyball2 from '@/assets/products/Volleyball_Post_Fixed_1.jpg';
+import Volleyball3 from '@/assets/products/Volleyball_Post_Movable_1.jpg';
+import Volleyball4 from '@/assets/products/Volleyball_Post_Movable_2.jpg';
 
-// Additional images for variety
-import Basketball5 from '@/assets/products/basketball-5.jpg';
-import BasketballManual from '@/assets/products/Basketball Post Movable ( Manual  Hydraulic )-1.jpg';
-import BasketballXDesign from '@/assets/products/Basketball Post ( Movable X Design)-1.jpg';
-import BasketballFixed from '@/assets/products/Basketball Post (Fixed 2.20 MTR EXT.)-1.jpg';
+// Handball images
+import Handball1 from '@/assets/products/Handball.jpg';
+import Handball2 from '@/assets/products/Handball_Goal_Post_1.jpg';
+import Handball3 from '@/assets/products/Handball_Goal_Post_2.jpg';
+import Handball4 from '@/assets/products/Handball.jpg';
+
+// Boxing Ring images
+import BoxingRing1 from '@/assets/products/Boxing_Ring.jpg';
+import BoxingRing2 from '@/assets/products/Boxing_Ring_Equipment_1.jpg';
+import BoxingRing3 from '@/assets/products/Boxing_Ring_Equipment_2.jpg';
+import BoxingRing4 from '@/assets/products/Boxing_Ring_Equipment_3.jpg';
+
+// Football images
+import Football1 from '@/assets/products/Football.jpg';
+import Football2 from '@/assets/products/Football_Goal_Post_Fixed_1.jpg';
+import Football3 from '@/assets/products/Football_Goal_Post_Movable_1.jpg';
+import Football4 from '@/assets/products/Football_Goal_Post_Movable_2.jpg';
+
+// Table Tennis images
+import TableTennis1 from '@/assets/products/Table_Tennis_Table_1.jpg';
+import TableTennis2 from '@/assets/products/Table_Tennis_Table_2.jpg';
+import TableTennis3 from '@/assets/products/Table_Tennis_Table_3.jpg';
+import TableTennis4 from '@/assets/products/Table_Tennis_Table_1.jpg';
+
+// Pool and Snooker Tables images
+import Snooker1 from '@/assets/products/Pool_and_Snooker_Tables.jpg';
+import Snooker2 from '@/assets/products/POOL_AND_SNOOKER_TABLE_1.jpg';
+import Snooker3 from '@/assets/products/POOL_AND_SNOOKER_TABLE_2.jpg';
+import Snooker4 from '@/assets/products/POOL_AND_SNOOKER_TABLE_3.jpg';
+
+// Gymnastics images
+import Gymnastics1 from '@/assets/products/Gymnastics.jpg';
+import Gymnastics2 from '@/assets/products/Gymnastics_Equipment_1.jpg';
+import Gymnastics3 from '@/assets/products/Gymnastics_Equipment_2.jpg';
+import Gymnastics4 from '@/assets/products/Pommel_Horse_1.jpg';
+
+// Hockey images
+import Hockey1 from '@/assets/products/Hockey.jpg';
+import Hockey2 from '@/assets/products/HOCKEY_Goal_Post_1.jpg';
+import Hockey3 from '@/assets/products/HOCKEY_Goal_Post_2.jpg';
+import Hockey4 from '@/assets/products/Hockey.jpg';
+
+// Dugout images
+import Dugout1 from '@/assets/products/dugouts-premium-1.jpg';
+import Dugout2 from '@/assets/products/dugouts-premium-1.jpg';
+import Dugout3 from '@/assets/products/dugouts-premium-1.jpg';
+import Dugout4 from '@/assets/products/dugouts-premium-1.jpg';
+
+// Outdoor Gym images
+import OutdoorGym1 from '@/assets/products/outdoor_gym.png';
+import OutdoorGym2 from '@/assets/products/Outdoor_Gym_And_Children_Play_Equipment_1.jpg';
+import OutdoorGym3 from '@/assets/products/Outdoor_Gym_And_Children_Play_Equipment_2.jpg';
+import OutdoorGym4 from '@/assets/products/Outdoor_Gym_And_Children_Play_Equipment_3.jpg';
+
+// Sports Flooring images
+import SportsFlooring1 from '@/assets/products/Sports_flooring.jpg';
+import SportsFlooring2 from '@/assets/products/Sports_flooring_1.jpg';
+import SportsFlooring3 from '@/assets/products/Sports_flooring_2.jpg';
+import SportsFlooring4 from '@/assets/products/Sports_flooring_3.jpg';
 
 interface ProductSpecifications {
   [key: string]: string;
@@ -85,12 +130,7 @@ const ProductDetail = () => {
         price: "₹15,000 - ₹50,000",
         rating: 4.6,
         reviews: 67,
-        images: [
-          Basketball1,
-          Basketball2,
-          Basketball3,
-          Basketball4
-        ],
+        images: [Basketball1, Basketball2, Basketball3, Basketball4],
         description: "Professional basketball equipment including hoops, backboards, and court systems. Built for durability and performance.",
         features: [
           "Height adjustable hoops",
@@ -114,12 +154,7 @@ const ProductDetail = () => {
         price: "₹8,000 - ₹25,000",
         rating: 4.5,
         reviews: 34,
-        images: [
-          Pickleball,
-          Pickleball,
-          Pickleball,
-          Pickleball
-        ],
+        images: [Pickleball1, Pickleball2, Pickleball3, Pickleball4],
         description: "Professional pickleball courts, nets, and equipment for indoor and outdoor facilities. Perfect for schools, clubs, and recreational centers.",
         features: [
           "Professional pickleball courts",
@@ -143,12 +178,7 @@ const ProductDetail = () => {
         price: "₹12,000 - ₹45,000",
         rating: 4.8,
         reviews: 67,
-        images: [
-          Badminton1,
-          Badminton2,
-          Badminton3,
-          Badminton4
-        ],
+        images: [Badminton1, Badminton2, Badminton3, Badminton4],
         description: "Professional badminton courts, nets, and equipment for indoor and outdoor facilities. Built to international standards with premium materials.",
         features: [
           "Professional badminton courts",
@@ -172,12 +202,7 @@ const ProductDetail = () => {
         price: "₹20,000 - ₹80,000",
         rating: 4.8,
         reviews: 89,
-        images: [
-          Tennis1,
-          Tennis2,
-          Tennis3,
-          Tennis4
-        ],
+        images: [Tennis1, Tennis2, Tennis3, Tennis4],
         description: "Professional tennis courts, nets, and equipment for both indoor and outdoor facilities. Built to international standards.",
         features: [
           "Professional tennis courts",
@@ -201,12 +226,7 @@ const ProductDetail = () => {
         price: "₹8,000 - ₹35,000",
         rating: 4.4,
         reviews: 23,
-        images: [
-          Foosball,
-          Foosball,
-          Foosball,
-          Foosball
-        ],
+        images: [Foosball1, Foosball2, Foosball3, Foosball4],
         description: "Professional foosball tables for entertainment and recreation. Perfect for clubs, offices, and home use.",
         features: [
           "Professional-grade tables",
@@ -230,12 +250,7 @@ const ProductDetail = () => {
         price: "₹8,000 - ₹30,000",
         rating: 4.5,
         reviews: 43,
-        images: [
-          Volleyball,
-          Volleyball,
-          Volleyball,
-          Volleyball
-        ],
+        images: [Volleyball1, Volleyball2, Volleyball3, Volleyball4],
         description: "Professional volleyball equipment including nets, posts, and court systems. Perfect for schools, clubs, and beach volleyball facilities.",
         features: [
           "Professional volleyball nets",
@@ -259,12 +274,7 @@ const ProductDetail = () => {
         price: "₹6,000 - ₹25,000",
         rating: 4.3,
         reviews: 19,
-        images: [
-          Handball,
-          Handball,
-          Handball,
-          Handball
-        ],
+        images: [Handball1, Handball2, Handball3, Handball4],
         description: "Professional handball equipment including goals, courts, and training equipment for indoor facilities.",
         features: [
           "Professional handball goals",
@@ -288,12 +298,7 @@ const ProductDetail = () => {
         price: "₹50,000 - ₹2,00,000",
         rating: 4.6,
         reviews: 38,
-        images: [
-          BoxingRing,
-          BoxingRing,
-          BoxingRing,
-          BoxingRing
-        ],
+        images: [BoxingRing1, BoxingRing2, BoxingRing3, BoxingRing4],
         description: "Professional boxing ring equipment for training facilities and clubs. Complete setup with safety features and professional standards.",
         features: [
           "Professional boxing ring",
@@ -317,12 +322,7 @@ const ProductDetail = () => {
         price: "₹8,000 - ₹35,000",
         rating: 4.7,
         reviews: 89,
-        images: [
-          Football,
-          Football,
-          Football,
-          Football
-        ],
+        images: [Football1, Football2, Football3, Football4],
         description: "Complete football equipment including goals, nets, training equipment, and field marking systems. Perfect for schools, clubs, and professional football facilities.",
         features: [
           "Professional football goals",
@@ -346,12 +346,7 @@ const ProductDetail = () => {
         price: "₹3,000 - ₹15,000",
         rating: 4.5,
         reviews: 78,
-        images: [
-          Tennis,
-          Tennis,
-          Tennis,
-          Tennis
-        ],
+        images: [TableTennis1, TableTennis2, TableTennis3, TableTennis4],
         description: "Professional table tennis tables, nets, and equipment for indoor facilities. Perfect for schools, clubs, and recreational centers.",
         features: [
           "Professional table tennis tables",
@@ -375,12 +370,7 @@ const ProductDetail = () => {
         price: "₹25,000 - ₹1,00,000",
         rating: 4.5,
         reviews: 34,
-        images: [
-          SnookerTable,
-          SnookerTable,
-          SnookerTable,
-          SnookerTable
-        ],
+        images: [Snooker1, Snooker2, Snooker3, Snooker4],
         description: "Professional pool and snooker tables for clubs, recreation centers, and home use. High-quality construction with premium materials.",
         features: [
           "Professional-grade tables",
@@ -404,12 +394,7 @@ const ProductDetail = () => {
         price: "₹30,000 - ₹1,50,000",
         rating: 4.7,
         reviews: 45,
-        images: [
-          Gymnastics,
-          Gymnastics,
-          Gymnastics,
-          Gymnastics
-        ],
+        images: [Gymnastics1, Gymnastics2, Gymnastics3, Gymnastics4],
         description: "Complete gymnastics equipment for training facilities, schools, and clubs. Professional-grade equipment for all skill levels.",
         features: [
           "Complete gymnastics setup",
@@ -433,12 +418,7 @@ const ProductDetail = () => {
         price: "₹10,000 - ₹40,000",
         rating: 4.7,
         reviews: 45,
-        images: [
-          Hockey,
-          Hockey,
-          Hockey,
-          Hockey
-        ],
+        images: [Hockey1, Hockey2, Hockey3, Hockey4],
         description: "Professional hockey equipment including goals, nets, training equipment, and field marking systems for India's national sport.",
         features: [
           "Professional hockey goals",
@@ -462,12 +442,7 @@ const ProductDetail = () => {
         price: "₹15,000 - ₹50,000",
         rating: 4.4,
         reviews: 28,
-        images: [
-          Dugout,
-          Dugout,
-          Dugout,
-          Dugout
-        ],
+        images: [Dugout1, Dugout2, Dugout3, Dugout4],
         description: "Professional dugout equipment for sports facilities and stadiums. Complete setup with seating, storage, and safety features.",
         features: [
           "Professional dugout design",
@@ -491,12 +466,7 @@ const ProductDetail = () => {
         price: "₹50,000 - ₹2,00,000",
         rating: 4.8,
         reviews: 123,
-        images: [
-          OutdoorGym,
-          OutdoorGym,
-          OutdoorGym,
-          OutdoorGym
-        ],
+        images: [OutdoorGym1, OutdoorGym2, OutdoorGym3, OutdoorGym4],
         description: "Complete outdoor gym setups with professional fitness equipment and children's play equipment. Perfect for parks, schools, and community centers across India.",
         features: [
           "Complete gym equipment sets",
@@ -520,12 +490,7 @@ const ProductDetail = () => {
         price: "₹200 - ₹800 per sq ft",
         rating: 4.6,
         reviews: 89,
-        images: [
-          SportsFlooring,
-          SportsFlooring,
-          SportsFlooring,
-          SportsFlooring
-        ],
+        images: [SportsFlooring1, SportsFlooring2, SportsFlooring3, SportsFlooring4],
         description: "Professional sports flooring solutions for indoor and outdoor facilities. Anti-slip, durable, and designed for various sports.",
         features: [
           "Anti-slip surface",

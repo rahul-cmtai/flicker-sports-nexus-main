@@ -87,9 +87,9 @@ const Navbar = () => {
               Contact
             </Link>
             
-            <Link to="/quote" className="cta-primary">
+            {/* <Link to="/quote" className="cta-primary">
               Get Quote
-            </Link>
+            </Link> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -103,7 +103,7 @@ const Navbar = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="lg:hidden bg-secondary border-t border-border">
+          <div className="lg:hidden bg-white border-t border-border">
             <div className="px-4 py-6 space-y-4">
               <Link to="/" className="block text-black hover:text-accent transition-colors">
                 Home
@@ -111,9 +111,37 @@ const Navbar = () => {
               <Link to="/about" className="block text-black hover:text-accent transition-colors">
                 About
               </Link>
-              <Link to="/products" className="block text-black hover:text-accent transition-colors">
-                Products
-              </Link>
+              {/* Products Mobile Dropdown */}
+              <div>
+                <button
+                  className="flex items-center w-full text-black hover:text-accent transition-colors focus:outline-none"
+                  onClick={() => setDropdownOpen(!dropdownOpen)}
+                >
+                  Products
+                  <ChevronDown className={`w-4 h-4 ml-1 transition-transform ${dropdownOpen ? 'rotate-180' : ''}`} />
+                </button>
+                {dropdownOpen && (
+                  <div className="pl-4 mt-2 space-y-1">
+                    {allProducts.map((product) => (
+                      <Link
+                        key={product}
+                        to={`/products/${product.toLowerCase().replace(/\s+/g, '-')}`}
+                        className="block text-sm text-foreground hover:text-primary transition-colors"
+                        onClick={() => setIsOpen(false)}
+                      >
+                        {product}
+                      </Link>
+                    ))}
+                    <Link
+                      to="/products"
+                      className="block text-primary font-medium hover:text-accent transition-colors mt-2"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      View All Products →
+                    </Link>
+                  </div>
+                )}
+              </div>
               <Link to="/gallery" className="block text-black hover:text-accent transition-colors">
                 Gallery
               </Link>
@@ -123,9 +151,9 @@ const Navbar = () => {
               <Link to="/contact" className="block text-black hover:text-accent transition-colors">
                 Contact
               </Link>
-              <Link to="/quote" className="cta-primary inline-block">
+              {/* <Link to="/quote" className="cta-primary inline-block">
                 Get Quote
-              </Link>
+              </Link> */}
             </div>
           </div>
         )}
