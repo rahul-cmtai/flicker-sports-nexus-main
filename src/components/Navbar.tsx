@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronDown } from 'lucide-react';
-import flickerLogo from '../assets/flicker-logo.png';
+import flickerLogo from '/assets/flicker-logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

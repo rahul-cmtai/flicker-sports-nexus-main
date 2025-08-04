@@ -1,31 +1,31 @@
 import React from "react";
-import NavBar from "../components/Navbar";
-import Footer from "../components/Footer";
-import airforceAcademyBangalore from '../assets/clients/airforce-academy-bangalore.png';
-import airforceAcademyHyderabad from '../assets/clients/airforce-academy-hyderabad.jpg';
-import centuryRealEstate from '../assets/clients/century-real-estate-holding-pvt-ltd.png';
-import crpfDeptJammu from '../assets/clients/crpf-dept-jammu.jpg';
-import garwareTechnicalFibres from '../assets/clients/garware-technical-fibres-ltd.jpg';
-import greatSportsTech from '../assets/clients/great-sports-tech-limited.jpg';
-import mechezoSports from '../assets/clients/mechezo-sports-pvt-ltd.jpg';
-import sainikSchoolSambalpur from '../assets/clients/sainik-school-sambalpur-logo.jpg';
-import sreenidhiDeccanFootball from '../assets/clients/sreenidhi-deccan-football-club-pvt-ltd-hyderabad.png';
-import tataJamshedpur from '../assets/clients/tata-jamshedpur.jpg';
-import woxsenUniversity from '../assets/clients/woxsen-university-hyderabad.jpg';
+import NavBar from '../components/Navbar';
+import Footer from '../components/Footer';
+import airforceAcademyBangalore from '/assets/clients/airforce-academy-bangalore.png';
+import airforceAcademyHyderabad from '/assets/clients/airforce-academy-hyderabad.jpg';
+import centuryRealEstate from '/assets/clients/century-real-estate-holding-pvt-ltd.png';
+import crpfDeptJammu from '/assets/clients/crpf-dept-jammu.jpg';
+import garwareTechnicalFibres from '/assets/clients/garware-technical-fibres-ltd.jpg';
+import greatSportsTech from '/assets/clients/great-sports-tech-limited.jpg';
+import mechezoSports from '/assets/clients/mechezo-sports-pvt-ltd.jpg';
+import sainikSchoolSambalpur from '/assets/clients/sainik-school-sambalpur-logo.jpg';
+import sreenidhiDeccanFootball from '/assets/clients/sreenidhi-deccan-football-club-pvt-ltd-hyderabad.png';
+import tataJamshedpur from '/assets/clients/tata-jamshedpur.jpg';
+import woxsenUniversity from '/assets/clients/woxsen-university-hyderabad.jpg';
 
 // Real client data with actual images (all available files)
 const clients = [
-  { name: "Air Force Academy Bangalore", img: airforceAcademyBangalore },
-  { name: "Air Force Academy Hyderabad", img: airforceAcademyHyderabad },
-  { name: "Century Real Estate Holding Pvt Ltd", img: centuryRealEstate },
-  { name: "CRPF Department Jammu", img: crpfDeptJammu },
-  { name: "Garware Technical Fibres Ltd", img: garwareTechnicalFibres },
-  { name: "Great Sports Tech Limited", img: greatSportsTech },
-  { name: "Mechezo Sports Pvt Ltd", img: mechezoSports },
-  { name: "Sainik School Sambalpur", img: sainikSchoolSambalpur },
-  { name: "Sreenidhi Deccan Football Club Pvt Ltd Hyderabad", img: sreenidhiDeccanFootball },
-  { name: "Tata Jamshedpur", img: tataJamshedpur },
-  { name: "Woxsen University Hyderabad", img: woxsenUniversity }
+  { name: "Air Force Academy Bangalore", img: '/assets/clients/airforce-academy-bangalore.png' },
+  { name: "Air Force Academy Hyderabad", img: '/assets/clients/airforce-academy-hyderabad.jpg' },
+  { name: "Century Real Estate Holding Pvt Ltd", img: '/assets/clients/century-real-estate-holding-pvt-ltd.png' },
+  { name: "CRPF Department Jammu", img: '/assets/clients/crpf-dept-jammu.jpg' },
+  { name: "Garware Technical Fibres Ltd", img: '/assets/clients/garware-technical-fibres-ltd.jpg' },
+  { name: "Great Sports Tech Limited", img: '/assets/clients/great-sports-tech-limited.jpg' },
+  { name: "Mechezo Sports Pvt Ltd", img: '/assets/clients/mechezo-sports-pvt-ltd.jpg' },
+  { name: "Sainik School Sambalpur", img: '/assets/clients/sainik-school-sambalpur-logo.jpg' },
+  { name: "Sreenidhi Deccan Football Club Pvt Ltd Hyderabad", img: '/assets/clients/sreenidhi-deccan-football-club-pvt-ltd-hyderabad.png' },
+  { name: "Tata Jamshedpur", img: '/assets/clients/tata-jamshedpur.jpg' },
+  { name: "Woxsen University Hyderabad", img: '/assets/clients/woxsen-university-hyderabad.jpg' }
 ];
 
 const Client = () => {

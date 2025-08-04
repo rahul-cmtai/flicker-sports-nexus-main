@@ -1,48 +1,42 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
-import Football from '@/assets/products/football-1.jpg';
-import Basketball from '@/assets/products/Basketball.jpg';
-import Badminton from '@/assets/products/Badminton.jpg';
-import LawnTennis from '@/assets/products/Lawn_Tennis.jpg';
-import OutdoorGym from '@/assets/products/outdoor_gym.png';
-import SportsFlooring from '@/assets/products/Sports_flooring.jpg';
 
 
 const categories = [
   {
     name: 'Basketball',
-    image: Basketball,
+    image: '/assets/products/basketball.jpg',
     description: 'Professional basketball equipment & courts',
     link: '/products/basketball'
   },
   {
     name: 'Football',
-    image: Football,
+    image: '/assets/products/Football.jpg',
     description: 'Goals, nets & training equipment',
     link: '/products/football'
   },
   {
     name: 'Badminton',
-    image: Badminton,
+    image: '/assets/products/Badminton.jpg',
     description: 'Courts, nets & professional gear',
     link: '/products/badminton'
   },
   {
     name: 'Lawn Tennis',
-    image: LawnTennis,
+    image: '/assets/products/Lawn_Tennis.jpg',
     description: 'Professional tennis courts & equipment',
     link: '/products/lawn-tennis'
   },
   {
     name: 'Outdoor Gym and Children Play Equipment',
-    image: OutdoorGym,
+    image: '/assets/products/outdoor_gym.png',
     description: 'Complete gym setups & play equipment',
     link: '/products/outdoor-gym-and-children-play-equipment'
   },
   {
     name: 'Sports Flooring',
-    image: SportsFlooring,
+    image: '/assets/products/Sports_flooring.jpg',
     description: 'Professional sports flooring solutions',
     link: '/products/sports-flooring'
   }

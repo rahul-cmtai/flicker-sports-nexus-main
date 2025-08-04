@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import flickerLogo from '../assets/flicker-logo.png';
-import flickerLogo1 from '../assets/icon.png';
+import flickerLogo from '/assets/flicker-logo.png';
+import flickerLogo1 from '/assets/icon.png';
 import { Award, Globe, Users, Target, Zap } from 'lucide-react';
 
 const About = () => {

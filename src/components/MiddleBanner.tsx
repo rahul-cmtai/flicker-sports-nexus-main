@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Energy from '@/assets/Home/energy.png';
 import { ArrowRight, CheckCircle } from 'lucide-react'; // Added CheckCircle for bullet points
 
 const MiddleBanner = () => {
@@ -11,7 +10,7 @@ const MiddleBanner = () => {
           {/* Image Side */}
           <div className="relative w-full lg:w-1/2 flex justify-center items-center">
             <img
-              src={Energy} // Adjusted height for better aspect ratio
+              src={'/assets/Home/energy.png'} // Adjusted height for better aspect ratio
               alt="Sports Facility Transformation"
               className="rounded-xl shadow-2xl transform transition-transform duration-500 hover:scale-105" // Enhanced image styling
             />
@@ -32,15 +31,15 @@ const MiddleBanner = () => {
             <ul className="space-y-4 mb-10 text-lg text-gray-100 max-w-xl mx-auto lg:mx-0">
               <li className="flex items-start animate-fade-in-up delay-300">
                 <CheckCircle className="w-6 h-6 text-blue-400 mr-3 flex-shrink-0 mt-1" />
-                <span>**Premium, Durable Equipment** built for performance and longevity.</span>
+                <span>Premium, Durable Equipment built for performance and longevity.</span>
               </li>
               <li className="flex items-start animate-fade-in-up delay-400">
                 <CheckCircle className="w-6 h-6 text-blue-400 mr-3 flex-shrink-0 mt-1" />
-                <span>**Expert Installation Services** ensuring safety and precision.</span>
+                <span>Expert Installation Services ensuring safety and precision.</span>
               </li>
               <li className="flex items-start animate-fade-in-up delay-500">
                 <CheckCircle className="w-6 h-6 text-blue-400 mr-3 flex-shrink-0 mt-1" />
-                <span>**Tailored Solutions** designed to meet your unique facility needs.</span>
+                <span>Tailored Solutions designed to meet your unique facility needs.</span>
               </li>
             </ul>
 

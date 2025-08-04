@@ -1,35 +1,31 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Camera, Video, ArrowRight } from 'lucide-react';
-import Basketball from '@/assets/products/Basketball.jpg';
-import Football from '@/assets/products/Football.jpg';
-import SportsFlooring from '@/assets/products/Sports_flooring.jpg';
-import OutdoorGym from '@/assets/products/outdoor_gym.png';
 
 const GalleryPreview = () => {
   const galleryItems = [
     {
       title: "Basketball Equipment",
       count: 19,
-      image: Basketball,
+      image: "/assets/products/basketball.jpg",
       link: "/gallery/basketball-equipment"
     },
     {
       title: "Football Equipment", 
       count: 15,
-      image: Football,
+      image: "/assets/products/Football.jpg",
       link: "/gallery/football-equipment"
     },
     {
       title: "Sports Flooring",
       count: 13,
-      image: SportsFlooring,
+      image: "/assets/products/Sports_flooring.jpg",
       link: "/gallery/sports-flooring"
     },
     {
       title: "Outdoor Gym Equipment",
       count: 32,
-      image: OutdoorGym,
+      image: "/assets/products/outdoor_gym.png",
       link: "/gallery/outdoor-gym"
     }
   ];

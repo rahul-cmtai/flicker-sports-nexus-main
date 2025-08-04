@@ -4,44 +4,44 @@ import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Filter } from 'lucide-react';
 // Updated image imports with correct file names
-import Basketball from '@/assets/products/basketball.jpg';
-import Table from '@/assets/products/tennis.jpg';
-import Dugout from '@/assets/products/dugouts-premium-1.jpg';
-import OutdoorGym from '@/assets/products/outdoor_gym.png';
-import SportsFlooring from '@/assets/products/Sports_flooring.jpg';
-import Pickalball from '@/assets/products/Pickleball.jpg';
-import Badminton from '@/assets/products/Badminton.jpg';
-import LawnTennis from '@/assets/products/Lawn_Tennis.jpg';
-import Foosball from '@/assets/products/Foosball.jpg';
-import Volleyball from '@/assets/products/Volleyball.jpg';
-import Handball from '@/assets/products/Handball.jpg';
-import BoxingRing from '@/assets/products/Boxing_Ring.jpg';
-import Football from '@/assets/products/Football.jpg';
-import SnookerTable from '@/assets/products/Pool_and_Snooker_Tables.jpg';
-import Gymnastics from '@/assets/products/Gymnastics.jpg';
-import Hockey from '@/assets/products/Hockey.jpg';
+// import Basketball from '/assets/products/basketball.jpg';
+// import Table from '/assets/products/tennis.jpg';
+// import Dugout from '/assets/products/dugouts-premium-1.jpg';
+// import OutdoorGym from '/assets/products/outdoor_gym.png';
+// import SportsFlooring from '/assets/products/Sports_flooring.jpg';
+// import Pickalball from '/assets/products/Pickleball.jpg';
+// import Badminton from '/assets/products/Badminton.jpg';
+// import LawnTennis from '/assets/products/Lawn_Tennis.jpg';
+// import Foosball from '/assets/products/Foosball.jpg';
+// import Volleyball from '/assets/products/Volleyball.jpg';
+// import Handball from '/assets/products/Handball.jpg';
+// import BoxingRing from '/assets/products/Boxing_Ring.jpg';
+// import Football from '/assets/products/Football.jpg';
+// import SnookerTable from '/assets/products/Pool_and_Snooker_Tables.jpg';
+// import Gymnastics from '/assets/products/Gymnastics.jpg';
+// import Hockey from '/assets/products/Hockey.jpg';
 
 
 
 
 const Products = () => {
   const allProducts = [
-    { name: 'Basketball', image: Basketball, category: 'Indoor' },
-    { name: 'Pickleball', image: Pickalball, category: 'Outdoor' },
-    { name: 'Badminton', image: Badminton, category: 'Indoor' },
-    { name: 'Lawn Tennis', image: LawnTennis, category: 'Outdoor' },
-    { name: 'Foosball', image: Foosball, category: 'Indoor' },
-      { name: 'Volleyball', image: Volleyball, category: 'Both' },
-      { name: 'Handball', image: Handball, category: 'Indoor' },
-      { name: 'Boxing Ring', image: BoxingRing, category: 'Indoor' },
-    { name: 'Football', image: Football, category: 'Outdoor' },
-    { name: 'Table Tennis', image: Table, category: 'Indoor' },
-    { name: 'Pool and Snooker Tables', image: SnookerTable, category: 'Indoor' },
-    { name: 'Gymnastics', image: Gymnastics, category: 'Indoor' },
-    { name: 'Hockey', image: Hockey, category: 'Outdoor' },
-    { name: 'Dugout', image: Dugout, category: 'Outdoor' },
-    { name: 'Outdoor Gym and Children Play Equipment', image: OutdoorGym, category: 'Outdoor' },
-    { name: 'Sports Flooring', image: SportsFlooring, category: 'Both' }
+    { name: 'Basketball', image: '/assets/products/basketball.jpg', category: 'Indoor' },
+    { name: 'Pickleball', image: '/assets/products/Pickleball.jpg', category: 'Outdoor' },
+    { name: 'Badminton', image: '/assets/products/Badminton.jpg', category: 'Indoor' },
+    { name: 'Lawn Tennis', image: '/assets/products/Lawn_Tennis.jpg', category: 'Outdoor' },
+    { name: 'Foosball', image: '/assets/products/Foosball.jpg', category: 'Indoor' },
+      { name: 'Volleyball', image: '/assets/products/Volleyball.jpg', category: 'Both' },
+      { name: 'Handball', image: '/assets/products/Handball.jpg', category: 'Indoor' },
+      { name: 'Boxing Ring', image: '/assets/products/Boxing_Ring.jpg', category: 'Indoor' },
+    { name: 'Football', image: '/assets/products/Football.jpg', category: 'Outdoor' },
+    { name: 'Table Tennis', image: '/assets/products/tennis.jpg', category: 'Indoor' },
+    { name: 'Pool and Snooker Tables', image: '/assets/products/Pool_and_Snooker_Tables.jpg', category: 'Indoor' },
+    { name: 'Gymnastics', image: '/assets/products/Gymnastics.jpg', category: 'Indoor' },
+    { name: 'Hockey', image: '/assets/products/Hockey.jpg', category: 'Outdoor' },
+    { name: 'Dugout', image: '/assets/products/dugouts-premium-1.jpg', category: 'Outdoor' },
+    { name: 'Outdoor Gym and Children Play Equipment', image: '/assets/products/outdoor_gym.png', category: 'Outdoor' },
+    { name: 'Sports Flooring', image: '/assets/products/Sports_flooring.jpg', category: 'Both' }
   ];
 
   return (

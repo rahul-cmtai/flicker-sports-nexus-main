@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Play } from 'lucide-react';
-import heroImage from '@/assets/hero-sports.jpg';
-import flickerLogo from '@/assets/icon.png';
 
 const HeroSection = () => {
   return (
@@ -10,7 +8,7 @@ const HeroSection = () => {
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        style={{ backgroundImage: `url(/assets/hero-sports.jpg)` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-primary/80 to-accent/70"></div>
       </div>
@@ -29,7 +27,7 @@ const HeroSection = () => {
           {/* Lightning Bolt Icon */}
           <div className="flex justify-center mb-6">
               <img 
-                src={flickerLogo} 
+                src={'/assets/icon.png'} 
                 alt="Flicker Sports Logo" 
                 className="w-15 h-14 object-contain"
               />
@@ -88,12 +86,17 @@ const HeroSection = () => {
 
           {/* Video Play Button */}
           <div className="mt-12">
-            <button className="group flex items-center justify-center mx-auto space-x-3 text-white hover:text-accent transition-colors">
+            <a 
+              href="https://www.youtube.com/@flickersports"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center justify-center mx-auto space-x-3 text-white hover:text-accent transition-colors"
+            >
               <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:bg-accent/30 transition-all">
                 <Play className="w-6 h-6 ml-1" />
               </div>
               <span className="text-lg font-medium">Watch Our Story</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
