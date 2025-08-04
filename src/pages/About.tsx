@@ -146,10 +146,9 @@ const About = () => {
       </section>
 
       {/* Director Section */}
-      <section className="py-24 bg-gradient-to-br from-primary/10 via-accent/10 to-background">
+      {/* <section className="py-24 bg-gradient-to-br from-primary/10 via-accent/10 to-background">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-12">
-            {/* Image Side */}
             <div className="flex-shrink-0 w-full lg:w-1/3 flex justify-center">
               <div className="relative group">
                 <img
@@ -162,7 +161,6 @@ const About = () => {
                 </div>
               </div>
             </div>
-            {/* Content Side */}
             <div className="w-full lg:w-2/3">
               <div className="backdrop-blur-lg bg-white/70 dark:bg-black/40 rounded-3xl shadow-xl p-10 border border-accent/30">
                 <h2 className="text-4xl font-extrabold text-secondary mb-2 flex items-center gap-3">
@@ -218,34 +216,61 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       
 
       
 
       {/* We Serve */}
-      <section className="py-16 bg-card">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="p-6 rounded-xl bg-gradient-to-br from-accent/10 to-primary/10 shadow">
-              <Users className="w-8 h-8 mx-auto text-accent mb-2" />
-              <h3 className="font-semibold text-secondary mb-1">Schools & Colleges</h3>
-              <p className="text-foreground text-sm">Supplying quality equipment for budding athletes and students.</p>
-            </div>
-            <div className="p-6 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 shadow">
-              <Award className="w-8 h-8 mx-auto text-primary mb-2" />
-              <h3 className="font-semibold text-secondary mb-1">Sports Clubs</h3>
-              <p className="text-foreground text-sm">Partnering with clubs to foster competitive excellence.</p>
-            </div>
-            <div className="p-6 rounded-xl bg-gradient-to-br from-accent/10 to-primary/10 shadow">
-              <Globe className="w-8 h-8 mx-auto text-accent mb-2" />
-              <h3 className="font-semibold text-secondary mb-1">Institutions</h3>
-              <p className="text-foreground text-sm">Equipping institutions for national and international events.</p>
-            </div>
-          </div>
+  <section className="py-20 bg-card">
+  <div className="container mx-auto px-4 lg:px-8">
+    <h2 className="text-3xl md:text-4xl font-bold text-center text-primary mb-12">
+      Who We Serve
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+      {/* Box 1 */}
+      <div className="group p-8 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/5 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+        <div className="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-accent/20 group-hover:bg-accent/30 transition-colors duration-300">
+          <Users className="w-7 h-7 text-accent" />
         </div>
-      </section>
+        <h3 className="text-lg font-semibold text-secondary mb-2 group-hover:text-accent transition-colors duration-300">
+          Schools & Colleges
+        </h3>
+        <p className="text-sm text-muted-foreground">
+          Supplying quality equipment for budding athletes and students.
+        </p>
+      </div>
+
+      {/* Box 2 */}
+      <div className="group p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/5 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+        <div className="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-primary/20 group-hover:bg-primary/30 transition-colors duration-300">
+          <Award className="w-7 h-7 text-primary" />
+        </div>
+        <h3 className="text-lg font-semibold text-secondary mb-2 group-hover:text-primary transition-colors duration-300">
+          Sports Clubs
+        </h3>
+        <p className="text-sm text-muted-foreground">
+          Partnering with clubs to foster competitive excellence.
+        </p>
+      </div>
+
+      {/* Box 3 */}
+      <div className="group p-8 rounded-2xl bg-gradient-to-br from-accent/10 to-primary/10 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+        <div className="w-14 h-14 mx-auto mb-4 flex items-center justify-center rounded-full bg-accent/20 group-hover:bg-accent/30 transition-colors duration-300">
+          <Globe className="w-7 h-7 text-accent" />
+        </div>
+        <h3 className="text-lg font-semibold text-secondary mb-2 group-hover:text-accent transition-colors duration-300">
+          Institutions
+        </h3>
+        <p className="text-sm text-muted-foreground">
+          Equipping institutions for national and international events.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
      
 

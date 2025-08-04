@@ -7,37 +7,37 @@ const MajorInstallations = () => {
     {
       name: "National Sports Academy",
       location: "Delhi",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+      image: "/assets/Home/delhi.jpg",
       website: "#"
     },
     {
       name: "State Sports Complex", 
       location: "Mumbai",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+      image: "/assets/Home/mumbai.jpg",
       website: "#"
     },
     {
       name: "Central University Sports",
       location: "Bangalore",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+      image: "/assets/Home/bangalore.jpg",
       website: "#"
     },
     {
       name: "Defense Sports Academy",
       location: "Pune",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+      image: "/assets/Home/Pune.jpg",
       website: "#"
     },
     {
       name: "Olympic Training Center",
       location: "Hyderabad",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop",
+      image: "/assets/Home/hyderabad.jpg",
       website: "#"
     },
     {
       name: "Regional Sports Hub",
       location: "Chennai",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop", 
+      image: "/assets/Home/chennai.jpg", 
       website: "#"
     }
   ];
