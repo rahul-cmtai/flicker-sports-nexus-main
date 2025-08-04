@@ -1,13 +1,45 @@
+'use client';
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
 
-const Contact = () => {
+export default function Contact() {
+  const [result, setResult] = React.useState('');
+  const [showPopup, setShowPopup] = React.useState(false);
+
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setResult('Sending...');
+    const formData = new FormData(event.currentTarget);
+    formData.append('access_key', '173c1e41-4388-4cf1-81e5-711cf1f4a049');
+
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult('Form Submitted Successfully');
+      setShowPopup(true); // Show thank you popup
+      event.currentTarget.reset();
+
+      setTimeout(() => {
+        setShowPopup(false); // Hide popup after 3 sec
+        window.location.reload(); // Reload page
+      }, 3000);
+    } else {
+      console.log('Error', data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div className="min-h-screen">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="pt-20 pb-12 bg-gradient-to-br from-primary/10 to-accent/5">
         <div className="container mx-auto px-4 lg:px-8 text-center">
@@ -15,8 +47,7 @@ const Contact = () => {
             Contact Us
           </h1>
           <p className="text-xl text-foreground max-w-3xl mx-auto">
-            Get in touch with our team for quotes, inquiries, or support. 
-            We're here to help you create the perfect sports facility.
+            Get in touch with our team for quotes, inquiries, or support. We're here to help you create the perfect sports facility.
           </p>
         </div>
       </section>
@@ -27,13 +58,11 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Info */}
             <div>
-              <h2 className="text-3xl font-bold text-secondary mb-8">
-                Get In Touch
-              </h2>
-              
+              <h2 className="text-3xl font-bold text-secondary mb-8">Get In Touch</h2>
+
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-lg flex items-center justify-center">
                     <MapPin className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -48,7 +77,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-lg flex items-center justify-center">
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -59,7 +88,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-lg flex items-center justify-center">
                     <Mail className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -69,7 +98,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-accent to-primary rounded-lg flex items-center justify-center">
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -86,58 +115,37 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="sports-card bg-card p-8 rounded-xl border border-border">
               <h3 className="text-2xl font-bold text-secondary mb-6">Send us a Message</h3>
-              
-              <form className="space-y-6">
+
+              <form onSubmit={onSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      First Name
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
-                      placeholder="John"
-                    />
+                    <label className="block text-sm font-medium text-foreground mb-2">First Name</label>
+                    <input type="text" name="first_name" required placeholder="John"
+                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent" />
                   </div>
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Last Name
-                    </label>
-                    <input
-                      type="text"
-                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
-                      placeholder="Doe"
-                    />
+                    <label className="block text-sm font-medium text-foreground mb-2">Last Name</label>
+                    <input type="text" name="last_name" required placeholder="Doe"
+                      className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent" />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
-                    placeholder="john@example.com"
-                  />
+                  <label className="block text-sm font-medium text-foreground mb-2">Email</label>
+                  <input type="email" name="email" required placeholder="john@example.com"
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent" />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Phone
-                  </label>
-                  <input
-                    type="tel"
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
-                    placeholder="+1 (555) 123-4567"
-                  />
+                  <label className="block text-sm font-medium text-foreground mb-2">Phone</label>
+                  <input type="tel" name="phone" placeholder="+91-XXXXXXXXXX"
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent" />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Subject
-                  </label>
-                  <select className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all">
+                  <label className="block text-sm font-medium text-foreground mb-2">Subject</label>
+                  <select name="subject"
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent">
                     <option value="">Select a subject</option>
                     <option value="quote">Request Quote</option>
                     <option value="product">Product Inquiry</option>
@@ -147,32 +155,37 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    rows={5}
-                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent focus:border-transparent transition-all"
-                    placeholder="Tell us about your sports facility requirements..."
-                  ></textarea>
+                  <label className="block text-sm font-medium text-foreground mb-2">Message</label>
+                  <textarea name="message" rows={5} required
+                    className="w-full px-4 py-3 border border-border rounded-lg focus:ring-2 focus:ring-accent"
+                    placeholder="Tell us about your sports facility requirements..."></textarea>
                 </div>
 
-                <button
-                  type="submit"
-                  className="w-full cta-primary"
-                >
+                <button type="submit" className="w-full cta-primary">
                   Send Message
                 </button>
               </form>
+
+              <p className="text-sm text-center text-muted-foreground mt-4">{result}</p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Thank You Popup */}
+      {showPopup && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
+          <div className="bg-white rounded-xl shadow-xl p-8 text-center max-w-sm w-full scale-100 transition-all duration-500">
+            <h2 className="text-2xl font-bold text-green-600 mb-2">Thank You!</h2>
+            <p className="text-gray-700">Your message has been submitted successfully.</p>
+          </div>
+        </div>
+      )}
+
       {/* WhatsApp Float Button */}
       <div className="fixed bottom-6 right-6 z-50">
         <a
-          href="https://wa.me/911234567890"
+          href="https://wa.me/919045440618"
           target="_blank"
           rel="noopener noreferrer"
           className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all transform hover:scale-110"
@@ -184,6 +197,4 @@ const Contact = () => {
       <Footer />
     </div>
   );
-};
-
-export default Contact;
+}
