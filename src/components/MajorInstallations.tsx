@@ -81,7 +81,7 @@ const MajorInstallations = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-bold text-secondary mb-4">
-            Major Installations
+          Our Partnerships and Collaborations
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-accent mx-auto"></div>
         </div>

@@ -31,13 +31,13 @@ const AboutPreview = () => {
           {/* Content */}
           <div>
             <h2 className="text-4xl lg:text-5xl font-bold text-secondary mb-6">
-              Why Choose 
-              <span className="text-primary"> Flicker Sports?</span>
+            Chosen by Athletes for
+              <span className="text-primary"> Excellence</span>
             </h2>
             <p className="text-lg text-foreground mb-8 leading-relaxed">
-              We are a leading Indian manufacturer of high-performance sports equipment, 
-              committed to empowering athletes and institutions across India with world-class 
-              products that deliver strength, agility, and peak performance.
+            At Flicker Sports, we take pride in being one of India’s leading manufacturers of high-performance sports equipment. Our mission is to empower athletes and institutions nationwide by delivering world-class products designed to enhance strength, agility, and peak performance.
+
+
             </p>
             
             <div className="space-y-4 mb-8">

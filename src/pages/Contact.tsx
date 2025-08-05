@@ -93,7 +93,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold text-secondary mb-2">Email</h3>
-                    <p className="text-foreground">flickersports@gmail.com</p>
+                    <p className="text-foreground">flickersportsindustries@gmail.com</p>
                   </div>
                 </div>
 
@@ -149,7 +149,7 @@ export default function Contact() {
                     <option value="">Select a subject</option>
                     <option value="quote">Request Quote</option>
                     <option value="product">Product Inquiry</option>
-                    <option value="support">Support</option>
+                    <option value="support">Ground Flooring</option>
                     <option value="partnership">Partnership</option>
                   </select>
                 </div>
@@ -182,17 +182,7 @@ export default function Contact() {
         </div>
       )}
 
-      {/* WhatsApp Float Button */}
-      <div className="fixed bottom-6 right-6 z-50">
-        <a
-          href="https://wa.me/919045440618"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition-all transform hover:scale-110"
-        >
-          <MessageCircle className="w-6 h-6 text-white" />
-        </a>
-      </div>
+
 
       <Footer />
     </div>

@@ -689,7 +689,10 @@ const ProductDetail = () => {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="flex-1 cta-primary">
+                <Button 
+                  className="flex-1 cta-primary"
+                  onClick={() => window.open("https://wa.me/919045440618", "_blank")}
+                >
                   <ShoppingCart className="w-5 h-5 mr-2" />
                   Request Quote
                 </Button>

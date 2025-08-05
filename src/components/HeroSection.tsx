@@ -8,7 +8,7 @@ const HeroSection = () => {
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(/assets/hero-sports.jpg)` }}
+        style={{ backgroundImage: `url(/assets/Home/hero1.png)` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-secondary/90 via-primary/80 to-accent/70"></div>
       </div>
