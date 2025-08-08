@@ -16,11 +16,18 @@ const teamMembers = [
     letter: "M",
     description: "Oversees daily operations and ensures excellence across all departments."
   },
+
   {
     name: "Mohd Faisal",
     position: "Chief Financial Officer (CFO)",
     letter: "M",
     description: "Manages financial strategy and ensures sustainable business growth."
+  },
+  {
+    name: "Seraj Sharif",
+    position: "Chief Operating Officer (COO)",
+    letter: "S",
+    description: "Oversees day-to-day operations, ensures business plans are executed, manages departments like production, sales, logistics, HR, and customer service."
   },
   {
     name: "Amit Singh",
@@ -29,13 +36,13 @@ const teamMembers = [
     description: "Leads our sales team to deliver exceptional client experiences nationwide."
   },
   {
-    name: "Ankit Singh",
+    name: "Ankit Gupta",
     position: "Digital Marketing Incharge",
     letter: "A",
     description: "Crafts our digital presence and builds our brand in the digital space."
   },
   {
-    name: "Sunil Kumar Prajapati",
+    name: "Sunil Kumar kushwaha",
     position: "Production Head and Quality Incharge",
     letter: "S",
     description: "Ensures every product meets our rigorous quality standards."

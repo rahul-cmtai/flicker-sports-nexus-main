@@ -25,7 +25,11 @@ const clients = [
   { name: "Sainik School Sambalpur", img: '/assets/clients/sainik-school-sambalpur-logo.jpg' },
   { name: "Sreenidhi Deccan Football Club Pvt Ltd Hyderabad", img: '/assets/clients/sreenidhi-deccan-football-club-pvt-ltd-hyderabad.png' },
   { name: "Tata Jamshedpur", img: '/assets/clients/tata-jamshedpur.jpg' },
-  { name: "Woxsen University Hyderabad", img: '/assets/clients/woxsen-university-hyderabad.jpg' }
+  { name: "Woxsen University Hyderabad", img: '/assets/clients/woxsen-university-hyderabad.jpg' },
+  { name: "School Of Kings", img: '/assets/clients/IMG-20250808-WA0010.jpg' },
+  { name: "National College Institute", img: '/assets/clients/IMG-20250808-WA0011.jpg' },
+  { name: "Lovely Professional University Punjab", img: '/assets/clients/IMG-20250808-WA0012.jpg' },
+  { name: "LPU University", img: '/assets/clients/IMG-20250808-WA0013.jpg' }
 ];
 
 const Client = () => {
