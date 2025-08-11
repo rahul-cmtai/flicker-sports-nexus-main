@@ -31,7 +31,7 @@ const AboutPreview = () => {
           {/* Content */}
           <div>
             <h2 className="text-4xl lg:text-5xl font-bold text-secondary mb-6">
-            Chosen by Athletes for
+            Trusted  by Athletes for
               <span className="text-primary"> Excellence</span>
             </h2>
             <p className="text-lg text-foreground mb-8 leading-relaxed">
